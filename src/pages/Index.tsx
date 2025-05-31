@@ -23,7 +23,7 @@ const Index = () => {
     },
     {
       title: "AI & Machine Learning Workshop",
-      date: "March 15, 2025", 
+      date: "March 15, 2025",
       time: "11:00 AM - 2:00 PM",
       location: "Tech Lab A",
       attendees: "150 Participants",
@@ -34,7 +34,7 @@ const Index = () => {
     {
       title: "Cybersecurity Panel Discussion",
       date: "March 16, 2025",
-      time: "10:00 AM - 11:30 AM", 
+      time: "10:00 AM - 11:30 AM",
       location: "Conference Room B",
       attendees: "200+ Attendees",
       description: "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
@@ -62,7 +62,7 @@ const Index = () => {
       title: "Closing Ceremony & Awards",
       date: "March 17, 2025",
       time: "4:00 PM - 6:00 PM",
-      location: "Main Auditorium", 
+      location: "Main Auditorium",
       attendees: "500+ Expected",
       description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
       category: "Ceremony"
@@ -129,7 +129,7 @@ const Index = () => {
                 <p className="text-xs text-gray-400">Innovation Conference 2025</p>
               </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navigationItems.map((item) => (
@@ -158,25 +158,32 @@ const Index = () => {
           </div>
 
           {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <nav className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
-              <div className="flex flex-col space-y-3">
-                {navigationItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                ))}
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 mt-3">
-                  Register Now
-                </Button>
-              </div>
-            </nav>
-          )}
+          <nav
+            className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out border-white/10 ${isMenuOpen ? "border-t mt-4 pt-4 pb-4 h-[230px]" : "h-0 border-0 p-0"
+              }`}
+            style={{
+              clipPath: isMenuOpen
+                ? "polygon(0 0, 100% 0, 100% 100%, 0% 100%)"
+                : "polygon(0 0, 100% 0, 100% 0, 0 0)",
+            }}
+          >
+            <div className="flex flex-col space-y-3">
+              {navigationItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 mt-3">
+                Register Now
+              </Button>
+            </div>
+          </nav>
+
         </div>
       </header>
 
@@ -195,11 +202,11 @@ const Index = () => {
           </FloatingElement>
           <FloatingElement delay="0.4s">
             <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-              Join the most anticipated technology conference of the year. Connect with industry leaders, 
+              Join the most anticipated technology conference of the year. Connect with industry leaders,
               explore cutting-edge innovations, and shape the future of technology together.
             </p>
           </FloatingElement>
-          
+
           <div className="flex flex-wrap justify-center gap-6 mb-16">
             <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
               <Calendar className="h-8 w-8 text-purple-400 mx-auto mb-3" />
@@ -255,7 +262,7 @@ const Index = () => {
               Event Timeline
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Three days of intensive learning, networking, and innovation. 
+              Three days of intensive learning, networking, and innovation.
               Here's what we have planned for you.
             </p>
           </div>
@@ -284,7 +291,7 @@ const Index = () => {
               Ready to Join Us?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Don't miss out on this incredible opportunity to connect, learn, and innovate. 
+              Don't miss out on this incredible opportunity to connect, learn, and innovate.
               Early bird pricing available until February 28th.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
