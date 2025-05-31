@@ -19,6 +19,9 @@ export default {
 			}
 		},
 		extend: {
+			perspective: {
+				DEFAULT: '1000px',
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -122,12 +125,16 @@ export default {
 			},
 			backdropBlur: {
 				xs: '2px',
-			}
+			},
+			rotate: {
+				'x-3': 'rotateX(3deg)',
+				'y-3': 'rotateY(3deg)',
+			},
 		}
 	},
 	plugins: [
 		require("tailwindcss-animate"),
-		function({ addUtilities }: any) {
+		function ({ addUtilities }: any) {
 			const newUtilities = {
 				'.glass': {
 					background: 'rgba(255, 255, 255, 0.05)',
@@ -152,7 +159,20 @@ export default {
 					'background-clip': 'text',
 				}
 			}
-			addUtilities(newUtilities)
+			addUtilities(
+				newUtilities,
+				{
+					'.perspective': {
+						perspective: '1000px',
+					},
+					'.rotate-x-3': {
+						transform: 'rotateX(3deg)',
+					},
+					'.rotate-y-3': {
+						transform: 'rotateY(3deg)',
+					},
+				}
+			)
 		}
 	],
 } satisfies Config;

@@ -6,6 +6,7 @@ import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
 import SpeakerCard from '@/components/SpeakerCard';
 import { useState } from 'react';
+import InfoCard from '@/components/InfoCard';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -208,26 +209,10 @@ const Index = () => {
           </FloatingElement>
 
           <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Calendar className="h-8 w-8 text-purple-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">March 15-17</p>
-              <p className="text-gray-400 text-sm">2025</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Users className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">500+ Attendees</p>
-              <p className="text-gray-400 text-sm">Industry Leaders</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Zap className="h-8 w-8 text-green-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">20+ Sessions</p>
-              <p className="text-gray-400 text-sm">Tech Topics</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Trophy className="h-8 w-8 text-orange-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">Awards Night</p>
-              <p className="text-gray-400 text-sm">Recognition</p>
-            </div>
+            <InfoCard icon={<Calendar size={32}/>} title="March 15-17" subtitle="2025"  iconColor="text-purple-400" />
+            <InfoCard icon={<Users size={32}/>} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
+            <InfoCard icon={<Zap size={32}/>} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400"/>
+            <InfoCard icon={<Trophy size={32}/>} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400"/>
           </div>
         </div>
       </section>
