@@ -131,12 +131,12 @@ export default {
 			const newUtilities = {
 				'.glass': {
 					background: 'rgba(255, 255, 255, 0.05)',
-					backdropFilter: 'blur(10px)',
+					// backdropFilter: 'blur(10px)',
 					border: '1px solid rgba(255, 255, 255, 0.1)',
 				},
 				'.glass-dark': {
 					background: 'rgba(0, 0, 0, 0.2)',
-					backdropFilter: 'blur(10px)',
+					// backdropFilter: 'blur(10px)',
 					border: '1px solid rgba(255, 255, 255, 0.1)',
 				},
 				'.text-gradient': {

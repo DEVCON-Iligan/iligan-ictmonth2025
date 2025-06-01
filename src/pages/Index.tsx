@@ -12,60 +12,213 @@ const Index = () => {
 
   const events = [
     {
-      title: "Opening Ceremony & Keynote",
-      date: "March 15, 2025",
-      time: "9:00 AM - 10:30 AM",
-      location: "Main Auditorium",
-      attendees: "500+ Expected",
+      title: "National ICT Month 2025 Kick-Off Celebration",
+      date: "June 2, 2025",
+      time: "? - ?",
+      location: "Anahaw Amphiteatre",
+      attendees: "? Expected",
       description: "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
-      category: "Keynote",
+      type: "Public Event",
+      organizer: "",
       isUpcoming: true
     },
     {
-      title: "AI & Machine Learning Workshop",
-      date: "March 15, 2025", 
-      time: "11:00 AM - 2:00 PM",
-      location: "Tech Lab A",
-      attendees: "150 Participants",
+      title: "DICT Event: Cyber Hygiene",
+      date: "June 3, 2025", 
+      time: "? - ?",
+      location: "DICT Training Room",
+      attendees: "? Participants",
       description: "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
-      category: "Workshop",
+      type: "Webinar",
+      organizer: "DICT",
       isUpcoming: true
     },
     {
-      title: "Cybersecurity Panel Discussion",
-      date: "March 16, 2025",
-      time: "10:00 AM - 11:30 AM", 
-      location: "Conference Room B",
-      attendees: "200+ Attendees",
+      title: "CDIIS Event: Gig Economy and AI INT",
+      date: "June 6, 2025",
+      time: "? - ?", 
+      location: "Online Webinar",
+      attendees: "? Attendees",
       description: "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
-      category: "Panel"
+      type: "Training",
+      organizer: "CDIIS",
+      isUpcoming: true
     },
     {
-      title: "Innovation Showcase",
-      date: "March 16, 2025",
-      time: "2:00 PM - 5:00 PM",
-      location: "Exhibition Hall",
-      attendees: "300+ Visitors",
+      title: "DICT Event: Tech Tuesday",
+      date: "June 10, 2025",
+      time: "? - ?",
+      location: "DICT Training Room",
+      attendees: "? Visitors",
       description: "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
-      category: "Exhibition"
+      type: "Training",
+      organizer: "DICT",
+      isUpcoming: true
     },
     {
-      title: "Networking Dinner",
-      date: "March 16, 2025",
-      time: "7:00 PM - 10:00 PM",
-      location: "Grand Ballroom",
-      attendees: "400+ Attendees",
+      title: "DEVCON Event: Code Camp & Robotics",
+      date: "June 11, 2025",
+      time: "? - ?",
+      location: "Digital Creatives Hub",
+      attendees: "? Attendees",
       description: "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
-      category: "Networking"
+      type: "Training",
+      organizer: "DEVCON Iligan",
+      isUpcoming: true
     },
     {
-      title: "Closing Ceremony & Awards",
-      date: "March 17, 2025",
-      time: "4:00 PM - 6:00 PM",
-      location: "Main Auditorium", 
-      attendees: "500+ Expected",
+      title: "CDIIS Event: Animation and Digital Creatives",
+      date: "June 13, 2025",
+      time: "? - ?",
+      location: "Online Webinar", 
+      attendees: "? Expected",
       description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      category: "Ceremony"
+      type: "Webinar",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "DEVCON Event: Kids Scratch Game Devt. Workshop",
+      date: "June 14, 2025",
+      time: "? - ?",
+      location: "Digital Creatives Hub",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Workshop",
+      organizer: "DEVCON Iligan",
+      isUpcoming: true
+    },
+    {
+      title: "DICT Event: Spark Program",
+      date: "June 16, 2025 - June 20, 2025",
+      time: "? - ?",
+      location: "DICT Training Room",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Training",
+      organizer: "DICT",
+      isUpcoming: true
+    },
+    {
+      title: "DEVCON Event: Programming Event",
+      date: "June 16, 2025 - June 20, 2025",
+      time: "? - ?",
+      location: "TBD",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Tournament",
+      organizer: "DEVCON Iligan",
+      isUpcoming: true
+    },
+    {
+      title: "CDIIS Event: Open House and Exploring Gadgets",
+      date: "June 18, 2025",
+      time: "? - ?",
+      location: "Digital Creatives Hub",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Public Event",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "ICI Event: Mobile Legends Tournament",
+      date: "June 19, 2025 - June 20, 2025",
+      time: "? - ?",
+      location: "Digital Creatives Hub",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Tournament",
+      organizer: "ICI",
+      isUpcoming: true
+    },
+    {
+      title: "DICT Event: ICT Proficiency Exam",
+      date: "June 20, 2025",
+      time: "? - ?",
+      location: "DICT Training Room",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Exam",
+      organizer: "DICT",
+      isUpcoming: true
+    },
+    {
+      title: "CDIIS Event: Content Creation: The New Influencer Marketing",
+      date: "June 20, 2025",
+      time: "? - ?",
+      location: "Online Webinar",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Webinar",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "DICT Event: School in a Bag",
+      date: "June 24, 2025",
+      time: "? - ?",
+      location: "Brgy. Rogongon, Iligan City",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Outreach Program",
+      organizer: "DICT",
+      isUpcoming: true
+    },
+    {
+      title: "CDIIS Event: DCIH Creatives Co-work Space and MSMEs Virtual Office Space Briefing",
+      date: "June 25, 2025",
+      time: "? - ?",
+      location: "Digital Creatives Hub",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Public Event",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "CDIIS Event: Smart Systems for Digital Transformation",
+      date: "June 26, 2025",
+      time: "? - ?",
+      location: "Online Webinar",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Webinar",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "ML Tournament Championship and Awarding",
+      date: "June 27, 2025",
+      time: "? - ?",
+      location: "Robinsons Place Iligan",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Public Event",
+      organizer: "CDIIS",
+      isUpcoming: true
+    },
+    {
+      title: "DEVCON Kids Robotics Tournament",
+      date: "June 27, 2025",
+      time: "? - ?",
+      location: "Robinsons Place Iligan",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Tournament",
+      organizer: "DEVCON Iligan",
+      isUpcoming: true
+    },
+    {
+      title: "Culmination Activity",
+      date: "June 27, 2025",
+      time: "? - ?",
+      location: "Robinsons Place Iligan",
+      attendees: "? Attendees",
+      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      type: "Public Event",
+      organizer: "CDIIS",
+      isUpcoming: true
     }
   ];
 
@@ -291,7 +444,7 @@ const Index = () => {
               <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3">
                 Register Now
               </Button>
-              <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3">
+              <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3 transition duration-300 ease-in-out">
                 View Schedule
               </Button>
             </div>
