@@ -1,11 +1,20 @@
-
-import { Calendar, Code, Users, Zap, Trophy, Coffee, Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import EventCard from '@/components/EventCard';
-import TimelineConnector from '@/components/TimelineConnector';
-import FloatingElement from '@/components/FloatingElement';
-import SpeakerCard from '@/components/SpeakerCard';
-import { useState } from 'react';
+import {
+  Calendar,
+  Code,
+  Users,
+  Zap,
+  Trophy,
+  Coffee,
+  Menu,
+  X,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import EventCard from "@/components/EventCard";
+import TimelineConnector from "@/components/TimelineConnector";
+import FloatingElement from "@/components/FloatingElement";
+import SpeakerCard from "@/components/SpeakerCard";
+import CalendarFeat from "@/components/Calendar";
+import { useState } from "react";
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,28 +26,31 @@ const Index = () => {
       time: "9:00 AM - 10:30 AM",
       location: "Main Auditorium",
       attendees: "500+ Expected",
-      description: "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
+      description:
+        "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
       category: "Keynote",
-      isUpcoming: true
+      isUpcoming: true,
     },
     {
       title: "AI & Machine Learning Workshop",
-      date: "March 15, 2025", 
+      date: "March 15, 2025",
       time: "11:00 AM - 2:00 PM",
       location: "Tech Lab A",
       attendees: "150 Participants",
-      description: "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
+      description:
+        "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
       category: "Workshop",
-      isUpcoming: true
+      isUpcoming: true,
     },
     {
       title: "Cybersecurity Panel Discussion",
       date: "March 16, 2025",
-      time: "10:00 AM - 11:30 AM", 
+      time: "10:00 AM - 11:30 AM",
       location: "Conference Room B",
       attendees: "200+ Attendees",
-      description: "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
-      category: "Panel"
+      description:
+        "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
+      category: "Panel",
     },
     {
       title: "Innovation Showcase",
@@ -46,8 +58,9 @@ const Index = () => {
       time: "2:00 PM - 5:00 PM",
       location: "Exhibition Hall",
       attendees: "300+ Visitors",
-      description: "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
-      category: "Exhibition"
+      description:
+        "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
+      category: "Exhibition",
     },
     {
       title: "Networking Dinner",
@@ -55,18 +68,20 @@ const Index = () => {
       time: "7:00 PM - 10:00 PM",
       location: "Grand Ballroom",
       attendees: "400+ Attendees",
-      description: "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
-      category: "Networking"
+      description:
+        "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
+      category: "Networking",
     },
     {
       title: "Closing Ceremony & Awards",
       date: "March 17, 2025",
       time: "4:00 PM - 6:00 PM",
-      location: "Main Auditorium", 
+      location: "Main Auditorium",
       attendees: "500+ Expected",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      category: "Ceremony"
-    }
+      description:
+        "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+      category: "Ceremony",
+    },
   ];
 
   const speakers = [
@@ -75,36 +90,40 @@ const Index = () => {
       title: "Chief Technology Officer",
       company: "TechVision Global",
       bio: "Leading expert in AI and machine learning with over 15 years of experience in enterprise technology solutions.",
-      expertise: ["Artificial Intelligence", "Machine Learning", "Enterprise Tech"]
+      expertise: [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Enterprise Tech",
+      ],
     },
     {
       name: "Marcus Rodriguez",
       title: "Cybersecurity Director",
       company: "SecureNet Solutions",
       bio: "Renowned cybersecurity specialist focused on protecting digital infrastructure for Fortune 500 companies.",
-      expertise: ["Cybersecurity", "Digital Infrastructure", "Risk Management"]
+      expertise: ["Cybersecurity", "Digital Infrastructure", "Risk Management"],
     },
     {
       name: "Prof. Emily Watson",
       title: "Innovation Research Lead",
       company: "Future Labs Institute",
       bio: "Academic researcher and industry consultant specializing in emerging technologies and digital transformation.",
-      expertise: ["Innovation Strategy", "Digital Transformation", "Research"]
+      expertise: ["Innovation Strategy", "Digital Transformation", "Research"],
     },
     {
       name: "David Kim",
       title: "Startup Ecosystem Builder",
       company: "Innovation Hub",
       bio: "Serial entrepreneur and investor helping startups scale their technology solutions in competitive markets.",
-      expertise: ["Entrepreneurship", "Venture Capital", "Scaling"]
-    }
+      expertise: ["Entrepreneurship", "Venture Capital", "Scaling"],
+    },
   ];
 
   const navigationItems = [
     { name: "Home", href: "#home" },
     { name: "Events", href: "#events" },
     { name: "Speakers", href: "#speakers" },
-    { name: "Register", href: "#register" }
+    { name: "Register", href: "#register" },
   ];
 
   return (
@@ -112,10 +131,15 @@ const Index = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div
+          className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        />
       </div>
-
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-50 glass-dark border-b border-white/10 backdrop-blur-lg">
         <div className="container mx-auto px-6 py-4">
@@ -125,11 +149,15 @@ const Index = () => {
                 <Code className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gradient-purple">DECVON ICT</h1>
-                <p className="text-xs text-gray-400">Innovation Conference 2025</p>
+                <h1 className="text-2xl font-bold text-gradient-purple">
+                  DECVON ICT
+                </h1>
+                <p className="text-xs text-gray-400">
+                  Innovation Conference 2025
+                </p>
               </div>
             </div>
-            
+
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
               {navigationItems.map((item) => (
@@ -153,7 +181,11 @@ const Index = () => {
               className="md:hidden text-white"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMenuOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
 
@@ -179,7 +211,6 @@ const Index = () => {
           )}
         </div>
       </header>
-
       {/* Hero Section */}
       <section id="home" className="relative z-10 py-32 pt-40">
         <div className="container mx-auto px-6 text-center">
@@ -195,11 +226,12 @@ const Index = () => {
           </FloatingElement>
           <FloatingElement delay="0.4s">
             <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-              Join the most anticipated technology conference of the year. Connect with industry leaders, 
-              explore cutting-edge innovations, and shape the future of technology together.
+              Join the most anticipated technology conference of the year.
+              Connect with industry leaders, explore cutting-edge innovations,
+              and shape the future of technology together.
             </p>
           </FloatingElement>
-          
+
           <div className="flex flex-wrap justify-center gap-6 mb-16">
             <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
               <Calendar className="h-8 w-8 text-purple-400 mx-auto mb-3" />
@@ -224,8 +256,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Speakers Section */}
+      {/* Speakers Section
       <section id="speakers" className="relative z-10 py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
@@ -233,18 +264,27 @@ const Index = () => {
               Featured Speakers
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Learn from industry leaders and visionaries who are shaping the future of technology.
+              Learn from industry leaders and visionaries who are shaping the
+              future of technology.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {speakers.map((speaker, index) => (
-              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div
+                key={index}
+                className="animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <SpeakerCard {...speaker} />
               </div>
             ))}
           </div>
         </div>
+      </section> */}
+      {/* Calendar by: Andrew Earl */}
+      <section id="calendar">
+        <CalendarFeat />
       </section>
 
       {/* Events Timeline */}
@@ -255,14 +295,18 @@ const Index = () => {
               Event Timeline
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Three days of intensive learning, networking, and innovation. 
+              Three days of intensive learning, networking, and innovation.
               Here's what we have planned for you.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             {events.map((event, index) => (
-              <div key={index} className="flex gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div
+                key={index}
+                className="flex gap-8 mb-12 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="flex-shrink-0 pt-6">
                   <TimelineConnector isLast={index === events.length - 1} />
                 </div>
@@ -275,6 +319,8 @@ const Index = () => {
         </div>
       </section>
 
+      {/* RECENT EVENTS */}
+
       {/* Call to Action */}
       <section id="register" className="relative z-10 py-20">
         <div className="container mx-auto px-6 text-center">
@@ -284,21 +330,27 @@ const Index = () => {
               Ready to Join Us?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Don't miss out on this incredible opportunity to connect, learn, and innovate. 
-              Early bird pricing available until February 28th.
+              Don't miss out on this incredible opportunity to connect, learn,
+              and innovate. Early bird pricing available until February 28th.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3"
+              >
                 Register Now
               </Button>
-              <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3"
+              >
                 View Schedule
               </Button>
             </div>
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/10 py-12">
         <div className="container mx-auto px-6">
@@ -307,15 +359,23 @@ const Index = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                 <Code className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gradient-purple">DECVON ICT</span>
+              <span className="text-xl font-bold text-gradient-purple">
+                DECVON ICT
+              </span>
             </div>
             <p className="text-gray-400 mb-6">
               Shaping the future of technology, one innovation at a time.
             </p>
             <div className="flex justify-center space-x-6 text-gray-400">
-              <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Contact Us</a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Contact Us
+              </a>
             </div>
             <p className="text-gray-500 text-sm mt-6">
               © 2025 DECVON ICT. All rights reserved.
