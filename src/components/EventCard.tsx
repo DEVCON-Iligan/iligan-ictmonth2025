@@ -1,6 +1,5 @@
-
-import { Calendar, Clock, MapPin, Users } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Calendar, Clock, MapPin, Users } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 interface EventCardProps {
   title: string;
@@ -13,18 +12,22 @@ interface EventCardProps {
   isUpcoming?: boolean;
 }
 
-const EventCard = ({ 
-  title, 
-  date, 
-  time, 
-  location, 
-  attendees, 
-  description, 
+const EventCard = ({
+  title,
+  date,
+  time,
+  location,
+  attendees,
+  description,
   category,
-  isUpcoming = false 
+  isUpcoming = false,
 }: EventCardProps) => {
   return (
-    <Card className={`glass-dark p-6 hover:glass transition-all duration-300 hover:scale-105 hover:shadow-xl ${isUpcoming ? 'border-purple-500/50 bg-purple-500/5' : ''}`}>
+    <Card
+      className={`glass-dark hover:glass p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl ${
+        isUpcoming ? "border-purple-500/50 bg-purple-500/5" : ""
+      }`}
+    >
       <div className="flex flex-col space-y-4">
         <div className="flex items-start justify-between">
           <div className="flex-1">
@@ -46,7 +49,7 @@ const EventCard = ({
             </p>
           </div>
         </div>
-        
+
         <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
           <div className="flex items-center gap-2 text-gray-300">
             <Calendar className="h-4 w-4 text-purple-400" />
