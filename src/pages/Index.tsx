@@ -212,8 +212,19 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section id="home" className="relative z-10 py-32 pt-40">
-        <div className="container mx-auto px-6 text-center">
+      <section
+        id="home"
+        className="h-[110vh] bg-[url('/herobg.jpg')] bg-cover bg-center relative"
+      >
+        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 z-10">
+          <img
+            src="/digital-bayanihan-logo.png"
+            alt="Digital Bayanihan Logo"
+            className="w-[30rem] h-auto drop-shadow-lg"
+          />
+        </div>
+        {/* relative z-10 py-32 pt-40 */}
+        {/* <div className="container mx-auto px-6 text-center">
           <FloatingElement>
             <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gradient-purple animate-fade-in-up">
               DECVON ICT
@@ -254,7 +265,7 @@ const Index = () => {
               <p className="text-gray-400 text-sm">Recognition</p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
       {/* Speakers Section
       <section id="speakers" className="relative z-10 py-20">
@@ -282,10 +293,11 @@ const Index = () => {
           </div>
         </div>
       </section> */}
+
       {/* Calendar by: Andrew Earl */}
-      <section id="calendar">
+      {/* <section id="calendar">
         <CalendarFeat />
-      </section>
+      </section> */}
 
       {/* Events Timeline */}
       <section id="events" className="relative z-10 py-20">
