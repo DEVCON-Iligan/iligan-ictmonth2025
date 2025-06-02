@@ -4,254 +4,68 @@ import { Button } from '@/components/ui/button';
 import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
-import SpeakerCard from '@/components/SpeakerCard';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import BG from '../images/BG.png';
+import DBL from '../images/Digital Bayanihan Logo.png';
+import DBLogo from '../images/Digital Bayanihan Logo only.png';
+import DBWordmark from '../images/Digital Bayanihan Wordmark only.png';
+import BagongPilipinas from '../images/BagongPilipinas Logo.png';
+import CICC from '../images/CICC Logo.png';
+import DICT from '../images/DICT Logo.png';
+import NTC from '../images/NTC Logo.png';
+import Something from '../images/Something Logo.png';
+import eventsData from '../data/events.json';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  // Responsive Header state variables
+  const [headerClass, setHeaderClass] = useState('');
+  const [showAltHeaderContent, setShowAltHeaderContent] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const heroRef = useRef<HTMLElement>(null);
 
-  const events = [
-    {
-      title: "National ICT Month 2025 Kick-Off Celebration",
-      date: "June 2, 2025",
-      time: "? - ?",
-      location: "Anahaw Amphiteatre",
-      attendees: "? Expected",
-      description: "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
-      type: "Public Event",
-      organizer: "",
-      isUpcoming: true
-    },
-    {
-      title: "DICT Event: Cyber Hygiene",
-      date: "June 3, 2025", 
-      time: "? - ?",
-      location: "DICT Training Room",
-      attendees: "? Participants",
-      description: "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
-      type: "Webinar",
-      organizer: "DICT",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: Gig Economy and AI INT",
-      date: "June 6, 2025",
-      time: "? - ?", 
-      location: "Online Webinar",
-      attendees: "? Attendees",
-      description: "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
-      type: "Training",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "DICT Event: Tech Tuesday",
-      date: "June 10, 2025",
-      time: "? - ?",
-      location: "DICT Training Room",
-      attendees: "? Visitors",
-      description: "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
-      type: "Training",
-      organizer: "DICT",
-      isUpcoming: true
-    },
-    {
-      title: "DEVCON Event: Code Camp & Robotics",
-      date: "June 11, 2025",
-      time: "? - ?",
-      location: "Digital Creatives Hub",
-      attendees: "? Attendees",
-      description: "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
-      type: "Training",
-      organizer: "DEVCON Iligan",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: Animation and Digital Creatives",
-      date: "June 13, 2025",
-      time: "? - ?",
-      location: "Online Webinar", 
-      attendees: "? Expected",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Webinar",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "DEVCON Event: Kids Scratch Game Devt. Workshop",
-      date: "June 14, 2025",
-      time: "? - ?",
-      location: "Digital Creatives Hub",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Workshop",
-      organizer: "DEVCON Iligan",
-      isUpcoming: true
-    },
-    {
-      title: "DICT Event: Spark Program",
-      date: "June 16, 2025 - June 20, 2025",
-      time: "? - ?",
-      location: "DICT Training Room",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Training",
-      organizer: "DICT",
-      isUpcoming: true
-    },
-    {
-      title: "DEVCON Event: Programming Event",
-      date: "June 16, 2025 - June 20, 2025",
-      time: "? - ?",
-      location: "TBD",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Tournament",
-      organizer: "DEVCON Iligan",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: Open House and Exploring Gadgets",
-      date: "June 18, 2025",
-      time: "? - ?",
-      location: "Digital Creatives Hub",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Public Event",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "ICI Event: Mobile Legends Tournament",
-      date: "June 19, 2025 - June 20, 2025",
-      time: "? - ?",
-      location: "Digital Creatives Hub",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Tournament",
-      organizer: "ICI",
-      isUpcoming: true
-    },
-    {
-      title: "DICT Event: ICT Proficiency Exam",
-      date: "June 20, 2025",
-      time: "? - ?",
-      location: "DICT Training Room",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Exam",
-      organizer: "DICT",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: Content Creation: The New Influencer Marketing",
-      date: "June 20, 2025",
-      time: "? - ?",
-      location: "Online Webinar",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Webinar",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "DICT Event: School in a Bag",
-      date: "June 24, 2025",
-      time: "? - ?",
-      location: "Brgy. Rogongon, Iligan City",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Outreach Program",
-      organizer: "DICT",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: DCIH Creatives Co-work Space and MSMEs Virtual Office Space Briefing",
-      date: "June 25, 2025",
-      time: "? - ?",
-      location: "Digital Creatives Hub",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Public Event",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "CDIIS Event: Smart Systems for Digital Transformation",
-      date: "June 26, 2025",
-      time: "? - ?",
-      location: "Online Webinar",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Webinar",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "ML Tournament Championship and Awarding",
-      date: "June 27, 2025",
-      time: "? - ?",
-      location: "Robinsons Place Iligan",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Public Event",
-      organizer: "CDIIS",
-      isUpcoming: true
-    },
-    {
-      title: "DEVCON Kids Robotics Tournament",
-      date: "June 27, 2025",
-      time: "? - ?",
-      location: "Robinsons Place Iligan",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Tournament",
-      organizer: "DEVCON Iligan",
-      isUpcoming: true
-    },
-    {
-      title: "Culmination Activity",
-      date: "June 27, 2025",
-      time: "? - ?",
-      location: "Robinsons Place Iligan",
-      attendees: "? Attendees",
-      description: "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-      type: "Public Event",
-      organizer: "CDIIS",
-      isUpcoming: true
-    }
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const headerHeight = headerRef.current?.offsetHeight || 0;
+      const heroHeight = heroRef.current?.offsetHeight || 0;
+      const heroTop = heroRef.current?.offsetTop || 0;
 
-  const speakers = [
-    {
-      name: "Dr. Sarah Chen",
-      title: "Chief Technology Officer",
-      company: "TechVision Global",
-      bio: "Leading expert in AI and machine learning with over 15 years of experience in enterprise technology solutions.",
-      expertise: ["Artificial Intelligence", "Machine Learning", "Enterprise Tech"]
-    },
-    {
-      name: "Marcus Rodriguez",
-      title: "Cybersecurity Director",
-      company: "SecureNet Solutions",
-      bio: "Renowned cybersecurity specialist focused on protecting digital infrastructure for Fortune 500 companies.",
-      expertise: ["Cybersecurity", "Digital Infrastructure", "Risk Management"]
-    },
-    {
-      name: "Prof. Emily Watson",
-      title: "Innovation Research Lead",
-      company: "Future Labs Institute",
-      bio: "Academic researcher and industry consultant specializing in emerging technologies and digital transformation.",
-      expertise: ["Innovation Strategy", "Digital Transformation", "Research"]
-    },
-    {
-      name: "David Kim",
-      title: "Startup Ecosystem Builder",
-      company: "Innovation Hub",
-      bio: "Serial entrepreneur and investor helping startups scale their technology solutions in competitive markets.",
-      expertise: ["Entrepreneurship", "Venture Capital", "Scaling"]
-    }
-  ];
+      if (scrollY === 0) {
+        setHeaderClass(''); // No Glass and border default view
+      } else if (scrollY > 0 && scrollY < heroTop + heroHeight - headerHeight) {
+        setHeaderClass('glass backdrop-blur-lg border-b border-white/10'); // Light Glass effect on Hero view
+      } else {
+        setHeaderClass('glass-dark backdrop-blur-lg border-b border-white/10'); // Dark Glass effect on other views
+      }
+
+      // Change content when scrolled down
+      const contentChangeThreshold = heroTop + (heroHeight / 4) - headerHeight;
+      if (scrollY > contentChangeThreshold) {
+        setShowAltHeaderContent(false);
+      } else {
+        setShowAltHeaderContent(true);
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const AgencyLogos = [
+    { logo: BagongPilipinas, name: "Bagong Pilipinas" },
+    { logo: CICC, name: "CICC" },
+    { logo: DICT, name: "DICT" },
+    { logo: NTC, name: "NTC" },
+    { logo: Something, name: "Something" }
+  ]
+  
+  const events = eventsData;
 
   const navigationItems = [
     { name: "Home", href: "#home" },
@@ -270,88 +84,117 @@ const Index = () => {
       </div>
 
       {/* Fixed Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 glass-dark border-b border-white/10 backdrop-blur-lg">
+      <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <Code className="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-gradient-purple">DECVON ICT</h1>
-                <p className="text-xs text-gray-400">Innovation Conference 2025</p>
-              </div>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              {navigationItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
-                >
-                  {item.name}
-                </a>
-              ))}
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0">
-                Register Now
-              </Button>
-            </nav>
-
-            {/* Mobile Menu Button */}
-            <Button
-              variant="ghost"
-              size="icon"
-              className="md:hidden text-white"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
-          </div>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <nav className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
-              <div className="flex flex-col space-y-3">
-                {navigationItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {item.name}
-                  </a>
+          {showAltHeaderContent ? (
+            <div className="mx-auto gap-y-4">
+              <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24">
+                {AgencyLogos.map((logo, index) => (
+                  <img src={logo.logo} alt={logo.name} className="w-20 h-auto object-contain" key={index} />
                 ))}
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 mt-3">
-                  Register Now
+              </div>
+              <h2 className="mx-auto text-2xl font-bold text-center text-[#224590]">
+                Presents
+              </h2>
+            </div>
+          ) : (
+            <>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center space-x-1.5">
+                  <img src={DBLogo} alt="Digital Bayanihan Logo" className="w-20 h-auto object-contain" />
+                  <img src={DBWordmark} alt="Digital Bayanihan Wordmark" className="w-36 h-auto object-contain" />
+                </div>
+                
+                {/* Desktop Navigation */}
+                <nav className="hidden md:flex items-center space-x-8">
+                  {navigationItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className={`${headerClass.includes('glass-dark') ? 'text-white hover:text-[#813AEA]' : 'text-[#5E31D2]/60 hover:text-[#5E31D2]'} transition-colors duration-200 font-medium`}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                  <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0">
+                    Register Now
+                  </Button>
+                </nav>
+
+                {/* Mobile Menu Button */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden text-white"
+                  onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
+                  {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </Button>
               </div>
-            </nav>
+
+              {/* Mobile Navigation */}
+              {isMenuOpen && (
+                <nav className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
+                  <div className="flex flex-col space-y-3">
+                    {navigationItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                    <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 mt-3">
+                      Register Now
+                    </Button>
+                  </div>
+                </nav>
+              )}
+            </>
           )}
         </div>
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative z-10 py-32 pt-40">
-        <div className="container mx-auto px-6 text-center">
+      <section 
+        id="home" 
+        className="relative z-10 py-32 pt-40"
+        style={{
+          backgroundImage: `url(${BG})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}  
+        ref={heroRef}
+      >
+        <div className="container mx-auto pt-2 px-6 text-center">
           <FloatingElement>
-            <h1 className="text-6xl md:text-8xl font-bold mb-6 text-gradient-purple animate-fade-in-up">
-              DECVON ICT
-            </h1>
+            <img src={DBL} alt="Digital Bayanihan Logo" className="w-1/3 h-1/3 mx-auto" />
           </FloatingElement>
           <FloatingElement delay="0.2s">
-            <h2 className="text-2xl md:text-4xl font-light mb-8 text-gray-300 animate-fade-in-up">
-              Innovation Conference 2025
+            <h2 className="text-2xl md:text-4xl mt-8 font-semibold text-black animate-fade-in-up">
+              NATIONAL ICT MONTH 2025
             </h2>
           </FloatingElement>
           <FloatingElement delay="0.4s">
+            <div className="border-2 border-[#3F4192] rounded-full w-fit h-fit mx-auto mt-8 py-2 px-8">
+              <h2 className="text-xl md:text-3xl font-semibold text-[#3F4192] animate-fade-in-up">
+                WALANG IWANAN SA DIGITAL BAYANIHAN
+              </h2>
+            </div>
+            <h2 className="text-xl md:text-3xl font-semibold text-[#3F4192] animate-fade-in-up">
+              JUNE 2025
+            </h2>
+          </FloatingElement>
+          
+          {/* <FloatingElement delay="0.4s">
             <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
               Join the most anticipated technology conference of the year. Connect with industry leaders, 
               explore cutting-edge innovations, and shape the future of technology together.
             </p>
-          </FloatingElement>
+          </FloatingElement> */}
           
           <div className="flex flex-wrap justify-center gap-6 mb-16">
             <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
@@ -374,28 +217,6 @@ const Index = () => {
               <p className="text-white font-semibold">Awards Night</p>
               <p className="text-gray-400 text-sm">Recognition</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Speakers Section */}
-      <section id="speakers" className="relative z-10 py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-purple">
-              Featured Speakers
-            </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Learn from industry leaders and visionaries who are shaping the future of technology.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {speakers.map((speaker, index) => (
-              <div key={index} className="animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                <SpeakerCard {...speaker} />
-              </div>
-            ))}
           </div>
         </div>
       </section>
