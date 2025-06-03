@@ -1,0 +1,211 @@
+[
+    {
+        "title": "National ICT Month 2025 Kick-Off Celebration",
+        "date": "June 2, 2025",
+        "time": "? - ?",
+        "location": "Anahaw Amphiteatre",
+        "attendees": "? Expected",
+        "description": "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
+        "type": "Public Event",
+        "organizer": "",
+        "isUpcoming": true
+    },
+    {
+        "title": "DICT Event: Cyber Hygiene",
+        "date": "June 3, 2025", 
+        "time": "? - ?",
+        "location": "DICT Training Room",
+        "attendees": "? Participants",
+        "description": "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
+        "type": "Webinar",
+        "organizer": "DICT",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: Gig Economy and AI INT",
+        "date": "June 6, 2025",
+        "time": "? - ?", 
+        "location": "Online Webinar",
+        "attendees": "? Attendees",
+        "description": "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
+        "type": "Training",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "DICT Event: Tech Tuesday",
+        "date": "June 10, 2025",
+        "time": "? - ?",
+        "location": "DICT Training Room",
+        "attendees": "? Visitors",
+        "description": "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
+        "type": "Training",
+        "organizer": "DICT",
+        "isUpcoming": true
+    },
+    {
+        "title": "DEVCON Event: Code Camp & Robotics",
+        "date": "June 11, 2025",
+        "time": "? - ?",
+        "location": "Digital Creatives Hub",
+        "attendees": "? Attendees",
+        "description": "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
+        "type": "Training",
+        "organizer": "DEVCON Iligan",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: Animation and Digital Creatives",
+        "date": "June 13, 2025",
+        "time": "? - ?",
+        "location": "Online Webinar", 
+        "attendees": "? Expected",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Webinar",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "DEVCON Event: Kids Scratch Game Devt. Workshop",
+        "date": "June 14, 2025",
+        "time": "? - ?",
+        "location": "Digital Creatives Hub",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Workshop",
+        "organizer": "DEVCON Iligan",
+        "isUpcoming": true
+    },
+    {
+        "title": "DICT Event: Spark Program",
+        "date": "June 16, 2025 - June 20, 2025",
+        "time": "? - ?",
+        "location": "DICT Training Room",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Training",
+        "organizer": "DICT",
+        "isUpcoming": true
+    },
+    {
+        "title": "DEVCON Event: Programming Event",
+        "date": "June 16, 2025 - June 20, 2025",
+        "time": "? - ?",
+        "location": "TBD",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Tournament",
+        "organizer": "DEVCON Iligan",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: Open House and Exploring Gadgets",
+        "date": "June 18, 2025",
+        "time": "? - ?",
+        "location": "Digital Creatives Hub",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Public Event",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "ICI Event: Mobile Legends Tournament",
+        "date": "June 19, 2025 - June 20, 2025",
+        "time": "? - ?",
+        "location": "Digital Creatives Hub",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Tournament",
+        "organizer": "ICI",
+        "isUpcoming": true
+    },
+    {
+        "title": "DICT Event: ICT Proficiency Exam",
+        "date": "June 20, 2025",
+        "time": "? - ?",
+        "location": "DICT Training Room",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Exam",
+        "organizer": "DICT",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: Content Creation: The New Influencer Marketing",
+        "date": "June 20, 2025",
+        "time": "? - ?",
+        "location": "Online Webinar",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Webinar",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "DICT Event: School in a Bag",
+        "date": "June 24, 2025",
+        "time": "? - ?",
+        "location": "Brgy. Rogongon, Iligan City",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Outreach Program",
+        "organizer": "DICT",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: DCIH Creatives Co-work Space and MSMEs Virtual Office Space Briefing",
+        "date": "June 25, 2025",
+        "time": "? - ?",
+        "location": "Digital Creatives Hub",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Public Event",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "CDIIS Event: Smart Systems for Digital Transformation",
+        "date": "June 26, 2025",
+        "time": "? - ?",
+        "location": "Online Webinar",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Webinar",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "ML Tournament Championship and Awarding",
+        "date": "June 27, 2025",
+        "time": "? - ?",
+        "location": "Robinsons Place Iligan",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Public Event",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    },
+    {
+        "title": "DEVCON Kids Robotics Tournament",
+        "date": "June 27, 2025",
+        "time": "? - ?",
+        "location": "Robinsons Place Iligan",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Tournament",
+        "organizer": "DEVCON Iligan",
+        "isUpcoming": true
+    },
+    {
+        "title": "Culmination Activity",
+        "date": "June 27, 2025",
+        "time": "? - ?",
+        "location": "Robinsons Place Iligan",
+        "attendees": "? Attendees",
+        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "type": "Public Event",
+        "organizer": "CDIIS",
+        "isUpcoming": true
+    }
+]

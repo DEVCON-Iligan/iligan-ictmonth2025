@@ -8,19 +8,21 @@ interface EventCardProps {
   location: string;
   attendees: string;
   description: string;
-  category: string;
+  type: string;
+  organizer?: string;
   isUpcoming?: boolean;
 }
 
-const EventCard = ({
-  title,
-  date,
-  time,
-  location,
-  attendees,
-  description,
-  category,
-  isUpcoming = false,
+const EventCard = ({ 
+  title, 
+  date, 
+  time, 
+  location, 
+  attendees, 
+  description, 
+  type,
+  organizer,
+  isUpcoming = false 
 }: EventCardProps) => {
   return (
     <Card
@@ -31,9 +33,14 @@ const EventCard = ({
       <div className="flex flex-col space-y-4">
         <div className="flex items-start justify-between">
           <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
+            <div className="span-group flex items-center gap-2 mb-2">
+              {organizer && (
+                <span className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
+                  {organizer}
+                </span>
+              )}
               <span className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
-                {category}
+                {type}
               </span>
               {isUpcoming && (
                 <span className="px-3 py-1 text-xs font-medium bg-blue-500/20 text-blue-300 rounded-full border border-blue-500/30">
