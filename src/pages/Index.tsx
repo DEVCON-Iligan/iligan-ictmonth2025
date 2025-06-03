@@ -15,6 +15,7 @@ import DICT from '../images/DICT Logo.png';
 import NTC from '../images/NTC Logo.png';
 import Something from '../images/Something Logo.png';
 import eventsData from '../data/events.json';
+import InfoCard from '@/components/InfoCard';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -207,7 +208,7 @@ const Index = () => {
             <InfoCard icon={<Zap size={32}/>} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400"/>
             <InfoCard icon={<Trophy size={32}/>} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400"/>
           </div>
-        </div> */}
+        </div>
       </section>
 
       {/* Events Timeline */}
