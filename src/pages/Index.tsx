@@ -71,7 +71,7 @@ const Index = () => {
     { name: "Home", href: "#home" },
     { name: "Events", href: "#events" },
     { name: "Speakers", href: "#speakers" },
-    { name: "Register", href: "#register" }
+    { name: "Register", href: "#register" },
   ];
 
   return (
@@ -79,10 +79,15 @@ const Index = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div
+          className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"
+          style={{ animationDelay: "2s" }}
+        />
       </div>
-
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
         <div className="container mx-auto px-6 py-4">
@@ -156,7 +161,6 @@ const Index = () => {
           )}
         </div>
       </header>
-
       {/* Hero Section */}
       <section 
         id="home" 
@@ -191,34 +195,19 @@ const Index = () => {
           
           {/* <FloatingElement delay="0.4s">
             <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-              Join the most anticipated technology conference of the year. Connect with industry leaders, 
-              explore cutting-edge innovations, and shape the future of technology together.
+              Join the most anticipated technology conference of the year.
+              Connect with industry leaders, explore cutting-edge innovations,
+              and shape the future of technology together.
             </p>
           </FloatingElement> */}
           
           <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Calendar className="h-8 w-8 text-purple-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">March 15-17</p>
-              <p className="text-gray-400 text-sm">2025</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Users className="h-8 w-8 text-blue-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">500+ Attendees</p>
-              <p className="text-gray-400 text-sm">Industry Leaders</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Zap className="h-8 w-8 text-green-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">20+ Sessions</p>
-              <p className="text-gray-400 text-sm">Tech Topics</p>
-            </div>
-            <div className="glass p-6 rounded-xl text-center hover:glass-dark transition-all duration-300 hover:scale-105">
-              <Trophy className="h-8 w-8 text-orange-400 mx-auto mb-3" />
-              <p className="text-white font-semibold">Awards Night</p>
-              <p className="text-gray-400 text-sm">Recognition</p>
-            </div>
+            <InfoCard icon={<Calendar size={32}/>} title="March 15-17" subtitle="2025"  iconColor="text-purple-400" />
+            <InfoCard icon={<Users size={32}/>} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
+            <InfoCard icon={<Zap size={32}/>} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400"/>
+            <InfoCard icon={<Trophy size={32}/>} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400"/>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Events Timeline */}
@@ -229,14 +218,18 @@ const Index = () => {
               Event Timeline
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Three days of intensive learning, networking, and innovation. 
+              Three days of intensive learning, networking, and innovation.
               Here's what we have planned for you.
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto">
             {events.map((event, index) => (
-              <div key={index} className="flex gap-8 mb-12 animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div
+                key={index}
+                className="flex gap-8 mb-12 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <div className="flex-shrink-0 pt-6">
                   <TimelineConnector isLast={index === events.length - 1} />
                 </div>
@@ -249,6 +242,8 @@ const Index = () => {
         </div>
       </section>
 
+      {/* RECENT EVENTS */}
+
       {/* Call to Action */}
       <section id="register" className="relative z-10 py-20">
         <div className="container mx-auto px-6 text-center">
@@ -258,11 +253,18 @@ const Index = () => {
               Ready to Join Us?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Don't miss out on this incredible opportunity to connect, learn, and innovate. 
+
+              Don't miss out on this incredible opportunity to connect, learn, and innovate.
               Early bird pricing available until February 28th.
+
+              Don't miss out on this incredible opportunity to connect, learn,
+              and innovate. Early bird pricing available until February 28th.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3"
+              >
                 Register Now
               </Button>
               <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3 transition duration-300 ease-in-out">
@@ -272,7 +274,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/10 py-12">
         <div className="container mx-auto px-6">
@@ -281,15 +282,23 @@ const Index = () => {
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                 <Code className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gradient-purple">DECVON ICT</span>
+              <span className="text-xl font-bold text-gradient-purple">
+                DECVON ICT
+              </span>
             </div>
             <p className="text-gray-400 mb-6">
               Shaping the future of technology, one innovation at a time.
             </p>
             <div className="flex justify-center space-x-6 text-gray-400">
-              <a href="#" className="hover:text-purple-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-purple-400 transition-colors">Contact Us</a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-purple-400 transition-colors">
+                Contact Us
+              </a>
             </div>
             <p className="text-gray-500 text-sm mt-6">
               © 2025 DECVON ICT. All rights reserved.
