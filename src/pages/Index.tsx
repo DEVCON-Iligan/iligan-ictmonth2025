@@ -5,15 +5,6 @@ import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
 import { useEffect, useRef, useState } from 'react';
-import BG from '../images/BG.png';
-import DBL from '../images/Digital Bayanihan Logo.png';
-import DBLogo from '../images/Digital Bayanihan Logo only.png';
-import DBWordmark from '../images/Digital Bayanihan Wordmark only.png';
-import BagongPilipinas from '../images/BagongPilipinas Logo.png';
-import CICC from '../images/CICC Logo.png';
-import DICT from '../images/DICT Logo.png';
-import NTC from '../images/NTC Logo.png';
-import Something from '../images/Something Logo.png';
 import eventsData from '../data/events.json';
 import InfoCard from '@/components/InfoCard';
 
@@ -59,11 +50,11 @@ const Index = () => {
   }, []);
 
   const AgencyLogos = [
-    { logo: BagongPilipinas, name: "Bagong Pilipinas" },
-    { logo: CICC, name: "CICC" },
-    { logo: DICT, name: "DICT" },
-    { logo: NTC, name: "NTC" },
-    { logo: Something, name: "Something" }
+    { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749215905/bagong_pilipinas_logo_dbz6ul.webp", name: "Bagong Pilipinas Logo" },
+    { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216232/cicc_logo_d8eigg.webp", name: "Cybercrime Investigation and Coordinating Center Logo" },
+    { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216321/dict_logo_it1nuw.webp", name: "Department of Information Communication Technology Logo" },
+    { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216000/ntc_logo_kw2inh.webp", name: "National Telecommunications Commission Logo" },
+    { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216448/national_privacy_commission_logo_tkbgv6.webp", name: "National Privacy Commission" }
   ]
   
   const events = eventsData;
@@ -107,8 +98,8 @@ const Index = () => {
             <>
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-1.5">
-                  <img src={DBLogo} alt="Digital Bayanihan Logo" className="w-20 h-auto object-contain" />
-                  <img src={DBWordmark} alt="Digital Bayanihan Wordmark" className="w-36 h-auto object-contain" />
+                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className="w-20 h-auto object-contain" />
+                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className="w-36 h-auto object-contain" />
                 </div>
                 
                 {/* Desktop Navigation */}
@@ -167,7 +158,7 @@ const Index = () => {
         id="home" 
         className="relative z-10 py-32 pt-40"
         style={{
-          backgroundImage: `url(${BG})`,
+          backgroundImage: `url('https://res.cloudinary.com/df9iielq1/image/upload/v1749214471/BG_j9ocod.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -176,7 +167,7 @@ const Index = () => {
       >
         <div className="container mx-auto pt-2 px-6 text-center">
           <FloatingElement>
-            <img src={DBL} alt="Digital Bayanihan Logo" className="w-1/3 h-1/3 mx-auto" />
+            <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749214905/digital_bayanihan_logo_ylrgvu.webp" alt="Digital Bayanihan Logo" className="w-1/3 h-1/3 mx-auto" />
           </FloatingElement>
           <FloatingElement delay="0.2s">
             <h2 className="text-2xl md:text-4xl mt-8 font-semibold text-black animate-fade-in-up">
