@@ -1,87 +1,26 @@
 
-import { Calendar, Code, Users, Zap, Trophy, Coffee, Menu, X } from 'lucide-react';
+import { Code, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import eventsData from '../data/events.json';
-import InfoCard from '@/components/InfoCard';
-import { gsap } from 'gsap';
+import { useHeaderScroll } from '@/hooks/use-header-scroll';
+import { useHeaderAnimation } from '@/hooks/use-header-animation';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Responsive Header state variables
-  const [headerClass, setHeaderClass] = useState('');
-  const [showAltHeaderContent, setShowAltHeaderContent] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const heroRef = useRef<HTMLElement>(null);
   const altHeaderRef = useRef<HTMLDivElement>(null);
   const mainHeaderRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const headerHeight = headerRef.current?.offsetHeight || 0;
-      const heroHeight = heroRef.current?.offsetHeight || 0;
-      const heroTop = heroRef.current?.offsetTop || 0;
-
-      if (scrollY === 0) {
-        setHeaderClass(''); // No Glass and border default view
-      } else if (scrollY > 0 && scrollY < heroTop + heroHeight - headerHeight) {
-        setHeaderClass('glass backdrop-blur-lg border-b border-white/10'); // Light Glass effect on Hero view
-      } else {
-        setHeaderClass('glass-dark backdrop-blur-lg border-b border-white/10'); // Dark Glass effect on other views
-      }
-
-      // Change content when scrolled down
-      const contentChangeThreshold = heroTop + (heroHeight / 4) - headerHeight;
-      if (scrollY > contentChangeThreshold) {
-        setShowAltHeaderContent(false);
-      } else {
-        setShowAltHeaderContent(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (showAltHeaderContent) {
-      gsap.to(mainHeaderRef.current, {
-        autoAlpha: 0,
-        duration: 0.1,
-        onComplete: () => {
-          gsap.set(mainHeaderRef.current, { display: "none" });
-          gsap.set(altHeaderRef.current, { display: "flex" });
-          gsap.to(altHeaderRef.current, {
-            autoAlpha: 1,
-            duration: 0.2
-          });
-        }
-      });
-    } else {
-      gsap.to(altHeaderRef.current, {
-        autoAlpha: 0,
-        duration: 0.1,
-        onComplete: () => {
-          gsap.set(altHeaderRef.current, { display: "none" });
-          gsap.set(mainHeaderRef.current, { display: "flex" });
-          gsap.to(mainHeaderRef.current, {
-            autoAlpha: 1,
-            duration: 0.2
-          });
-        }
-      });
-    }
-  }, [showAltHeaderContent]);
-
+  // Header Scroll and Animation Hooks
+  const { headerClass, showAltHeaderContent } = useHeaderScroll(headerRef, heroRef);
+  useHeaderAnimation(showAltHeaderContent, mainHeaderRef, altHeaderRef);
 
   const AgencyLogos = [
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749215905/bagong_pilipinas_logo_dbz6ul.webp", name: "Bagong Pilipinas Logo" },
@@ -123,7 +62,7 @@ const Index = () => {
             </div>
           </div>
           <div ref={mainHeaderRef} className='w-screen flex flex-col'>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between pl-3 pr-6">
               <div className="flex items-center space-x-1.5">
                 <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
                 <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
@@ -209,12 +148,6 @@ const Index = () => {
             </h2>
           </FloatingElement>
 
-          <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <InfoCard icon={<Calendar size={32} />} title="June 2025" subtitle="" iconColor="text-purple-400" />
-            <InfoCard icon={<Users size={32} />} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
-            <InfoCard icon={<Zap size={32} />} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400" />
-            <InfoCard icon={<Trophy size={32} />} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400" />
-          </div>
         </div>
       </section>
 
