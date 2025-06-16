@@ -8,44 +8,44 @@ html {
 
 @layer base {
   :root {
-    --background: 222 84% 4%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 210 47% 11%;
 
-    --card: 222 84% 4%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 47% 11%;
 
-    --popover: 222 84% 4%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 47% 11%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222 47% 11%;
+    --primary: 201 76% 64%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 201 23% 94%;
+    --secondary-foreground: 201 84% 24%;
 
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 201 23% 94%;
+    --muted-foreground: 201 16% 46%;
 
-    --accent: 217 33% 17%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 201 44% 88%;
+    --accent-foreground: 201 84% 24%;
 
-    --destructive: 0 63% 31%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 213 27% 84%;
+    --border: 201 31% 91%;
+    --input: 201 31% 91%;
+    --ring: 201 76% 64%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 240 6% 10%;
-    --sidebar-foreground: 240 5% 96%;
-    --sidebar-primary: 224 76% 48%;
+    --sidebar-background: 201 23% 97%;
+    --sidebar-foreground: 201 84% 24%;
+    --sidebar-primary: 201 76% 64%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 4% 16%;
-    --sidebar-accent-foreground: 240 5% 96%;
-    --sidebar-border: 240 4% 16%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-accent: 201 23% 94%;
+    --sidebar-accent-foreground: 201 84% 24%;
+    --sidebar-border: 201 31% 91%;
+    --sidebar-ring: 201 76% 64%;
   }
 }
 
@@ -55,30 +55,8 @@ html {
   }
 
   body {
-    @apply bg-background text-foreground;
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    @apply text-foreground;
+    background: linear-gradient(to bottom, #6bb0d7 15%, #ffffff 25%);
     min-height: 100vh;
   }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(168, 85, 247, 0.5);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(168, 85, 247, 0.7);
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: rgba(168, 85, 247, 0.9);
 }

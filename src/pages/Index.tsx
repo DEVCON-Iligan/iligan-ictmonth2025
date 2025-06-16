@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import { useHeaderScroll } from '@/hooks/use-header-scroll';
 import { useHeaderAnimation } from '@/hooks/use-header-animation';
@@ -17,6 +17,14 @@ const Index = () => {
   const heroRef = useRef<HTMLElement>(null);
   const altHeaderRef = useRef<HTMLDivElement>(null);
   const mainHeaderRef = useRef<HTMLDivElement>(null);
+  const [clientDate, setClientDate] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setClientDate(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   // Header Scroll and Animation Hooks
   const { headerClass, showAltHeaderContent } = useHeaderScroll(headerRef, heroRef);
@@ -38,9 +46,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen text-white relative overflow-hidden">
+    <div className="min-h-screen text-black relative overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
         <div
           className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"
@@ -50,7 +58,7 @@ const Index = () => {
           className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "2s" }}
         />
-      </div>
+      </div> */}
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
         <div className="p-4 flex flex-row w-full h-full">
@@ -119,7 +127,7 @@ const Index = () => {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative z-10 py-32 pt-40"
+        className=""
         style={{
           backgroundImage: `url('https://res.cloudinary.com/df9iielq1/image/upload/v1749214471/BG_j9ocod.webp')`,
           backgroundSize: 'cover',
@@ -128,25 +136,68 @@ const Index = () => {
         }}
         ref={heroRef}
       >
-        <div className="container mx-auto pt-2 px-6 text-center">
+        <div className="h-fit min-h-screen px-6 text-center">
+          <div className='w-full h-40'>
+
+          </div>
           <FloatingElement>
-            <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749214905/digital_bayanihan_logo_ylrgvu.webp" alt="Digital Bayanihan Logo" className="w-1/3 h-1/3 mx-auto" />
+            <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749214905/digital_bayanihan_logo_ylrgvu.webp" alt="Digital Bayanihan Logo" className="w-40 sm:w-80 h-auto mx-auto" />
           </FloatingElement>
           <FloatingElement delay="0.2s">
-            <h2 className="text-2xl md:text-4xl mt-8 font-semibold text-black animate-fade-in-up">
+            <h2 className="text-lg sm:text-2xl md:text-3xl sm:mt-8 mt-3 font-bold text-black animate-fade-in-up">
               NATIONAL ICT MONTH 2025
             </h2>
           </FloatingElement>
           <FloatingElement delay="0.4s">
-            <div className="border-2 border-[#3F4192] rounded-full w-fit h-fit mx-auto mt-8 py-2 px-8">
-              <h2 className="text-xl md:text-3xl font-semibold text-[#3F4192] animate-fade-in-up">
+            <div className="border-2 border-[#3F4192] rounded-full w-fit h-fit mx-auto sm:mt-4 mt-3 py-2 px-8">
+              <h2 className="text-xs md:text-2xl font-semibold text-[#3F4192] animate-fade-in-up">
                 WALANG IWANAN SA DIGITAL BAYANIHAN
               </h2>
             </div>
-            <h2 className="text-xl md:text-3xl font-semibold text-[#3F4192] animate-fade-in-up">
-              JUNE 2025
+            <h2 className="text-sm md:text-2xl text-[#3F4192] mt-2 animate-fade-in-up">
+              June 2025
             </h2>
           </FloatingElement>
+          <h1 className='text-4xl mt-32 font-bold'>Happening Now</h1>
+          <div className='m-auto max-w-[1200px] mt-8 w-full h-fit flex flex-col justify-center'>
+            <div className='flex-1'>
+              <EventCard title={'Test 1'} date={'Testmonth 23, 2025'} time={{
+                start: '06:00',
+                end: '18:00'
+              }} location={'Test Village'} attendees={'5'} description={'A Testchu'} type={'TestType'} posts={
+                [
+                  {
+                    "poster": "CDIIS",
+                    "title": "Tentative Post Title",
+                    "description": "Tentative Post Description",
+                    "link": "",
+                    "thumbnail": ""
+                  },
+                  {
+                    "poster": "DEVCON Iligan",
+                    "title": "Tentative Post Title",
+                    "description": "Tentative Post Description",
+                    "link": "",
+                    "thumbnail": ""
+                  },
+                  {
+                    "poster": "Digital Creatives Hub Iligan",
+                    "title": "Tentative Post Title",
+                    "description": "Tentative Post Description",
+                    "link": "",
+                    "thumbnail": ""
+                  }
+                ]
+              } agencies={[
+                "CDIIS",
+                "DEVCON Iligan",
+                "Digital Creatives Hub Iligan"
+              ]} />
+            </div>
+            <div className='w-full h-10'>
+
+            </div>
+          </div>
 
         </div>
       </section>
@@ -155,12 +206,11 @@ const Index = () => {
       <section id="events" className="relative z-10 py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient-purple">
-              Event Timeline
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
+              Upcoming Events
             </h2>
-            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Three days of intensive learning, networking, and innovation.
-              Here's what we have planned for you.
+            <p className="text-xl text-black/70 max-w-2xl mx-auto">
+              Events that you can join
             </p>
           </div>
 
