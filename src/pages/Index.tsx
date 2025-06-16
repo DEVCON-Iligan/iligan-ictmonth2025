@@ -62,8 +62,6 @@ const Index = () => {
   const navigationItems = [
     { name: "Home", href: "#home" },
     { name: "Events", href: "#events" },
-    { name: "Speakers", href: "#speakers" },
-    { name: "Register", href: "#register" },
   ];
 
   return (
@@ -82,7 +80,7 @@ const Index = () => {
       </div>
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto pl-6 pr-16 py-4">
           {showAltHeaderContent ? (
             <div className="mx-auto gap-y-4">
               <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24">
@@ -98,8 +96,8 @@ const Index = () => {
             <>
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-1.5">
-                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className="w-20 h-auto object-contain" />
-                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className="w-36 h-auto object-contain" />
+                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
+                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
                 </div>
                 
                 {/* Desktop Navigation */}
@@ -113,9 +111,6 @@ const Index = () => {
                       {item.name}
                     </a>
                   ))}
-                  <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0">
-                    Register Now
-                  </Button>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -185,16 +180,8 @@ const Index = () => {
             </h2>
           </FloatingElement>
           
-          {/* <FloatingElement delay="0.4s">
-            <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-              Join the most anticipated technology conference of the year.
-              Connect with industry leaders, explore cutting-edge innovations,
-              and shape the future of technology together.
-            </p>
-          </FloatingElement> */}
-          
           <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <InfoCard icon={<Calendar size={32}/>} title="March 15-17" subtitle="2025"  iconColor="text-purple-400" />
+            <InfoCard icon={<Calendar size={32}/>} title="June 2025" subtitle="" iconColor="text-purple-400" />
             <InfoCard icon={<Users size={32}/>} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
             <InfoCard icon={<Zap size={32}/>} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400"/>
             <InfoCard icon={<Trophy size={32}/>} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400"/>
