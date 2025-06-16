@@ -1,9 +1,65 @@
 [
     {
+        "title": "National ICT Month 2025 Kick-off Celebration",
+        "date": "2025-06-02",
+        "time": {
+            "start": "8:00",
+            "end": "12:00"
+        },
+        "location": "Anahaw Amphitheater",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Public Event",
+        "agencies": [
+            {
+                "name": "CDIIS",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Gig Economy and Artificial Intelligence",
+        "date": "2025-06-06",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "Online Webinar",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "CDIIS",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
         "title": "mBot Workshop Day 1",
         "date": "2025-06-07",
         "time": {
-            "start": "8:00",
+            "start": "9:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
@@ -53,7 +109,7 @@
         "title": "mBot Workshop Day 2",
         "date": "2025-06-08",
         "time": {
-            "start": "8:00",
+            "start": "9:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
@@ -92,6 +148,34 @@
             },
             {
                 "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Tech Tuesday",
+        "date": "2025-06-10",
+        "time": {
+            "start": "13:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
                 "title": "Tentative Post Title",
                 "description": "Tentative Post Description",
                 "link": "",
@@ -289,127 +373,19 @@
         ]
     },
     {
-        "title": "Mobile Legends Tournament Qualifying Stage Day 1",
-        "date": "2025-06-19",
+        "title": "Spark Program Day 1",
+        "date": "2025-06-16",
         "time": {
             "start": "8:00",
             "end": "17:00"
         },
-        "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Tournament",
-        "agencies": [
-            {
-                "name": "LGU",
-                "logo": ""
-            },
-            {
-                "name": "ICI",
-                "logo": ""
-            },
-            {
-                "name": "Digital Creatives Hub Iligan",
-                "logo": ""
-            }
-        ],
-        "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "ICI",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
-    },
-    {
-        "title": "Mobile Legends Tournament Qualifying Stage Day 2",
-        "date": "2025-06-20",
-        "time": {
-            "start": "8:00",
-            "end": "17:00"
-        },
-        "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Tournament",
-        "agencies": [
-            {
-                "name": "LGU",
-                "logo": ""
-            },
-            {
-                "name": "ICI",
-                "logo": ""
-            },
-            {
-                "name": "Digital Creatives Hub Iligan",
-                "logo": ""
-            }
-        ],
-        "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "ICI",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
-    },
-    {
-        "title": "Smart Systems for Digital Transformation",
-        "date": "2025-06-23",
-        "time": {
-            "start": "8:00",
-            "end": "17:00"
-        },
-        "location": "Digital Creatives Hub",
+        "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
             {
-                "name": "CDIIS",
-                "logo": ""
-            },
-            {
-                "name": "DEVCON Iligan",
-                "logo": ""
-            },
-            {
-                "name": "Digital Creatives Hub Iligan",
+                "name": "DICT",
                 "logo": ""
             }
         ],
@@ -421,7 +397,88 @@
                 "description": "Tentative Post Description",
                 "link": "",
                 "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Spark Program Day 2",
+        "date": "2025-06-17",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Spark Program Day 3",
+        "date": "2025-06-18",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Open House and Exploring Gadgets",
+        "date": "2025-06-18",
+        "time": {
+            "start": "9:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Public Event",
+        "agencies": [
+            {
+                "name": "CDIIS",
+                "logo": ""
             },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
             {
                 "poster": "CDIIS",
                 "title": "Tentative Post Title",
@@ -439,8 +496,36 @@
         ]
     },
     {
-        "title": "DCIH Creatives Cowork Space and MSMEs Virtual Office Space Briefing",
-        "date": "2025-06-25",
+        "title": "Spark Program Day 4",
+        "date": "2025-06-19",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Mobile Legends Tournament Qualifying Stage Day 1",
+        "date": "2025-06-19",
         "time": {
             "start": "8:00",
             "end": "17:00"
@@ -448,14 +533,294 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Competition",
+        "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Iligan Computer Institute",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "LGU Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Iligan Computer Institute",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Spark Program Day 5",
+        "date": "2025-06-20",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Mobile Legends Tournament Qualifying Stage Day 2",
+        "date": "2025-06-20",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Competition",
+        "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Iligan Computer Institute",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "LGU Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Iligan Computer Institute",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "ICT Proficiency Exam",
+        "date": "2025-06-20",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "DICT Training Room",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Exam",
+        "agencies": [
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "3D Modeling and 3D Printing Crash Course",
+        "date": "2025-06-21",
+        "time": {
+            "start": "9:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Workshop",
         "agencies": [
             {
                 "name": "CDIIS",
                 "logo": ""
             },
             {
+                "name": "Obsidian Creatives",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Obsidian Creatives",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "School in a Bag",
+        "date": "2025-06-24",
+        "time": {
+            "start": "8:00",
+            "end": "15:00"
+        },
+        "location": "Brgy. Rogongon, Iligan City",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Outreach Program",
+        "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": ""
+            },
+            {
+                "name": "DICT",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "LGU Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Programming Contest",
+        "date": "2025-06-24",
+        "time": {
+            "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "Mindanao State University - Iligan Institute of Technology",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Competition",
+        "agencies": [
+            {
+                "name": "Mindanao State University - Iligan Institute of Technology",
+                "logo": ""
+            },
+            {
                 "name": "DEVCON Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "Mindanao State University - Iligan Institute of Technology",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "DCIH Creatives Cowork Space and MSMEs Virtual Office Space Briefing",
+        "date": "2025-06-25",
+        "time": {
+            "start": "9:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Public Event",
+        "agencies": [
+            {
+                "name": "CDIIS",
                 "logo": ""
             },
             {
@@ -489,10 +854,56 @@
         ]
     },
     {
-        "title": "ICT Month 2025 Culmination",
+        "title": "Smart Systems for Digital Transformation",
         "date": "2025-06-26",
         "time": {
             "start": "8:00",
+            "end": "17:00"
+        },
+        "location": "Online Webinar",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Seminar",
+        "agencies": [
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "National ICT Month 2025 Culminating Activity",
+        "date": "2025-06-26",
+        "time": {
+            "start": "13:00",
             "end": "17:00"
         },
         "location": "Robinsons Place Iligan",
@@ -539,16 +950,94 @@
         ]
     },
     {
+        "title": "Mobile Legends Tournament Championship Stage",
+        "date": "2025-06-26",
+        "time": {
+            "start": "13:00",
+            "end": "17:00"
+        },
+        "location": "Robinsons Place Iligan",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Competition",
+        "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Iligan Computer Institute",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "LGU Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Iligan Computer Institute",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "DEVCON Kids Robotics Tournament",
+        "date": "2025-06-26",
+        "time": {
+            "start": "13:00",
+            "end": "17:00"
+        },
+        "location": "Robinsons Place Iligan",
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "type": "Competition",
+        "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            }
+        ],
+        "registerLink": "",
+        "posts": [
+            {
+                "poster": "LGU Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
         "title": "Digital Tourism and Community-Based Digital Nomad Tourism FGD",
         "date": "2025-06-27",
         "time": {
-            "start": "8:00",
+            "start": "14:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
+        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -589,23 +1078,19 @@
         ]
     },
     {
-        "title": "Open House and Exploring Gadgets",
+        "title": "Tech-Up Iligan | Empowering Iligan Cities Professional Service Provider and Offices",
         "date": "2025-06-28",
         "time": {
-            "start": "8:00",
-            "end": "17:00"
+            "start": "8:30",
+            "end": "11:30"
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Showcase",
+        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
-                "logo": ""
-            },
-            {
-                "name": "DEVCON Iligan",
                 "logo": ""
             },
             {
@@ -617,13 +1102,6 @@
         "posts": [
             {
                 "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
                 "title": "Tentative Post Title",
                 "description": "Tentative Post Description",
                 "link": "",
@@ -640,69 +1118,19 @@
     },
     {
         "title": "Iligan Freelancers Meetup",
-        "date": "2025-06-28",
+        "date": "2025-06-29",
         "time": {
-            "start": "8:00",
-            "end": "17:00"
+            "start": "15:00",
+            "end": "18:00"
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Meetup",
+        "type": "Public Event",
         "agencies": [
             "CDIIS",
             "DEVCON Iligan",
             "Digital Creatives Hub Iligan"
-        ],
-        "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
-    },
-    {
-        "title": "Tech UPPP!! Iligan",
-        "date": "2025-06-28",
-        "time": {
-            "start": "8:00",
-            "end": "17:00"
-        },
-        "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
-        "agencies": [
-            {
-                "name": "CDIIS",
-                "logo": ""
-            },
-            {
-                "name": "DEVCON Iligan",
-                "logo": ""
-            },
-            {
-                "name": "Digital Creatives Hub Iligan",
-                "logo": ""
-            }
         ],
         "registerLink": "",
         "posts": [
