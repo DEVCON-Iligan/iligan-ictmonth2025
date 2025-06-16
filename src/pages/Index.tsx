@@ -7,6 +7,7 @@ import FloatingElement from '@/components/FloatingElement';
 import { useEffect, useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import InfoCard from '@/components/InfoCard';
+import { gsap } from 'gsap';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,8 @@ const Index = () => {
   const [showAltHeaderContent, setShowAltHeaderContent] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const heroRef = useRef<HTMLElement>(null);
+  const altHeaderRef = useRef<HTMLDivElement>(null);
+  const mainHeaderRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +52,37 @@ const Index = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (showAltHeaderContent) {
+      gsap.to(mainHeaderRef.current, {
+        autoAlpha: 0,
+        duration: 0.1,
+        onComplete: () => {
+          gsap.set(mainHeaderRef.current, { display: "none" });
+          gsap.set(altHeaderRef.current, { display: "flex" });
+          gsap.to(altHeaderRef.current, {
+            autoAlpha: 1,
+            duration: 0.2
+          });
+        }
+      });
+    } else {
+      gsap.to(altHeaderRef.current, {
+        autoAlpha: 0,
+        duration: 0.1,
+        onComplete: () => {
+          gsap.set(altHeaderRef.current, { display: "none" });
+          gsap.set(mainHeaderRef.current, { display: "flex" });
+          gsap.to(mainHeaderRef.current, {
+            autoAlpha: 1,
+            duration: 0.2
+          });
+        }
+      });
+    }
+  }, [showAltHeaderContent]);
+
+
   const AgencyLogos = [
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749215905/bagong_pilipinas_logo_dbz6ul.webp", name: "Bagong Pilipinas Logo" },
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216232/cicc_logo_d8eigg.webp", name: "Cybercrime Investigation and Coordinating Center Logo" },
@@ -80,53 +114,45 @@ const Index = () => {
       </div>
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
-        <div className="p-4 flex flex-row w-full h-full m-auto max-w-[1200px]">
-          {showAltHeaderContent ? (
-            <div className="w-full flex-row items-center justify-center">
-              <div className='w-full h-full flex flex-row justify-center items-center'>
-                {AgencyLogos.map((logo, index) => (
-                  <img src={logo.logo} alt={logo.name} className="w-10 h-10 sm:w-20 sm:h-20 object-contain mx-2" key={index} />
-                ))}
-              </div>
-              {/* <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24 bg-red-500">
-                
-              </div> */}
-              {/* <div className={`px-4 flex flex-col w-full h-full m-auto max-w-[1200px] ${centered ? "items-center" : ""} mt-0`}>
-            {children}
-        </div> */}
+        <div className="p-4 flex flex-row w-full h-full">
+          <div ref={altHeaderRef} className="w-screen flex flex-row items-center justify-center">
+            <div className='w-full h-full flex flex-row justify-center items-center'>
+              {AgencyLogos.map((logo, index) => (
+                <img src={logo.logo} alt={logo.name} className="w-10 h-10 sm:w-20 sm:h-20 object-contain mx-2" key={index} />
+              ))}
             </div>
-          ) : (
-            <>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-1.5">
-                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
-                  <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
-                </div>
-
-                {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center space-x-8">
-                  {navigationItems.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className={`${headerClass.includes('glass-dark') ? 'text-white hover:text-[#813AEA]' : 'text-[#5E31D2]/60 hover:text-[#5E31D2]'} transition-colors duration-200 font-medium`}
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </nav>
-
-                {/* Mobile Menu Button */}
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="md:hidden text-white"
-                  onClick={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                  {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </Button>
+          </div>
+          <div ref={mainHeaderRef} className='w-screen flex flex-col'>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-1.5">
+                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
+                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
               </div>
 
+              {/* Desktop Navigation */}
+              <nav className="hidden md:flex items-center space-x-8">
+                {navigationItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className={`${headerClass.includes('glass-dark') ? 'text-white hover:text-[#813AEA]' : 'text-[#5E31D2]/60 hover:text-[#5E31D2]'} transition-colors duration-200 font-medium`}
+                  >
+                    {item.name}
+                  </a>
+                ))}
+              </nav>
+
+              {/* Mobile Menu Button */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className="md:hidden text-white"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </Button>
+            </div>
+            <div>
               {/* Mobile Navigation */}
               {isMenuOpen && (
                 <nav className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4">
@@ -147,8 +173,8 @@ const Index = () => {
                   </div>
                 </nav>
               )}
-            </>
-          )}
+            </div>
+          </div>
         </div>
       </header>
       {/* Hero Section */}
