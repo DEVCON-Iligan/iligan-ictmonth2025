@@ -9,7 +9,7 @@ interface EventCardProps {
   attendees: string;
   description: string;
   type: string;
-  agencies?: string;
+  agencies?: string[];
   isUpcoming?: boolean;
 }
 
