@@ -80,17 +80,20 @@ const Index = () => {
       </div>
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
-        <div className="container">
+        <div className="p-4 flex flex-row w-full h-full m-auto max-w-[1200px]">
           {showAltHeaderContent ? (
-            <div className="mx-auto gap-y-4 flex-row items-center justify-center">
-              <div className='w-full h-full bg-green-500 flex flex-row justify-center items-center'>
+            <div className="w-full flex-row items-center justify-center">
+              <div className='w-full h-full flex flex-row justify-center items-center'>
                 {AgencyLogos.map((logo, index) => (
-                  <img src={logo.logo} alt={logo.name} className="w-20 h-auto object-contain" key={index} />
+                  <img src={logo.logo} alt={logo.name} className="w-10 h-10 sm:w-20 sm:h-20 object-contain mx-2" key={index} />
                 ))}
               </div>
               {/* <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24 bg-red-500">
                 
               </div> */}
+              {/* <div className={`px-4 flex flex-col w-full h-full m-auto max-w-[1200px] ${centered ? "items-center" : ""} mt-0`}>
+            {children}
+        </div> */}
             </div>
           ) : (
             <>
