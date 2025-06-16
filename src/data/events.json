@@ -1,249 +1,650 @@
 [
     {
-        "title": "National ICT Month 2025 Kick-Off Celebration",
-        "date": "June 2, 2025",
-        "time": "? - ?",
-        "location": "Anahaw Amphiteatre",
-        "attendees": "? Expected",
-        "description": "Join us for the grand opening of DECVON ICT 2025. Featuring keynote speakers from leading tech companies and industry pioneers.",
-        "type": "Public Event",
-        "agencies": [
-            
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "DICT Event: Cyber Hygiene",
-        "date": "June 3, 2025", 
-        "time": "? - ?",
-        "location": "DICT Training Room",
-        "attendees": "? Participants",
-        "description": "Deep dive into artificial intelligence and machine learning applications. Hands-on workshop with real-world projects and case studies.",
-        "type": "Webinar",
-        "agencies": [
-            "DICT"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "CDIIS Event: Gig Economy and AI INT",
-        "date": "June 6, 2025",
-        "time": "? - ?", 
-        "location": "Online Webinar",
-        "attendees": "? Attendees",
-        "description": "Expert panel discussing the latest cybersecurity threats, solutions, and best practices for modern businesses.",
-        "type": "Training",
-        "agencies": [
-            "CDIIS"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "DICT Event: Tech Tuesday",
-        "date": "June 10, 2025",
-        "time": "? - ?",
-        "location": "DICT Training Room",
-        "attendees": "? Visitors",
-        "description": "Discover cutting-edge innovations from startups and established companies. Network with innovators and explore breakthrough technologies.",
-        "type": "Training",
-        "agencies": [
-            "DICT"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "DEVCON Event: Code Camp & Robotics",
-        "date": "June 11, 2025",
-        "time": "? - ?",
+        "title": "mBot Workshop Day 1",
+        "date": "2025-06-07",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
         "location": "Digital Creatives Hub",
-        "attendees": "? Attendees",
-        "description": "Connect with industry leaders, fellow professionals, and potential collaborators in an elegant evening setting.",
-        "type": "Training",
-        "agencies": [
-            "DEVCON Iligan"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "CDIIS Event: Animation and Digital Creatives",
-        "date": "June 13, 2025",
-        "time": "? - ?",
-        "location": "Online Webinar", 
-        "attendees": "? Expected",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Webinar",
-        "agencies": [
-            "CDIIS"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "DEVCON Event: Kids Scratch Game Devt. Workshop",
-        "date": "June 14, 2025",
-        "time": "? - ?",
-        "location": "Digital Creatives Hub",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "attendees": null,
+        "description": null,
         "type": "Workshop",
         "agencies": [
-            "DEVCON Iligan"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "DICT Event: Spark Program",
-        "date": "June 16, 2025 - June 20, 2025",
-        "time": "? - ?",
-        "location": "DICT Training Room",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Training",
+        "title": "mBot Workshop Day 2",
+        "date": "2025-06-08",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Workshop",
         "agencies": [
-            "DICT"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "DEVCON Event: Programming Event",
-        "date": "June 16, 2025 - June 20, 2025",
-        "time": "? - ?",
-        "location": "TBD",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "title": "Digital Creatives in Animation Design",
+        "date": "2025-06-13",
+        "time": {
+            "isALlDay": false,
+            "start": "14:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Scratch Game Development Workshop",
+        "date": "2025-06-14",
+        "time": {
+            "isALlDay": false,
+            "start": "9:00",
+            "end": "15:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": 20,
+        "description": null,
+        "type": "Workshop",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "From Influence to Impact: The Rise of the Content Creator",
+        "date": "2025-06-14",
+        "time": {
+            "isALlDay": false,
+            "start": "15:00",
+            "end": "17:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Vibe Coding Seminar",
+        "date": "2025-06-15",
+        "time": {
+            "isALlDay": false,
+            "start": "14:00",
+            "end": "16:00"
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Mobile Legends Tournament Qualifying Stage Day 1",
+        "date": "2025-06-19",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
         "type": "Tournament",
         "agencies": [
-            "DEVCON Iligan"
+            "LGU",
+            "ICI",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "LGU",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "ICI",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "CDIIS Event: Open House and Exploring Gadgets",
-        "date": "June 18, 2025",
-        "time": "? - ?",
+        "title": "Mobile Legends Tournament Qualifying Stage Day 2",
+        "date": "2025-06-20",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
         "location": "Digital Creatives Hub",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Public Event",
-        "agencies": [
-            "CDIIS"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "ICI Event: Mobile Legends Tournament",
-        "date": "June 19, 2025 - June 20, 2025",
-        "time": "? - ?",
-        "location": "Digital Creatives Hub",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "attendees": null,
+        "description": null,
         "type": "Tournament",
         "agencies": [
-            "ICI"
+            "LGU",
+            "ICI",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "LGU",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "ICI",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "DICT Event: ICT Proficiency Exam",
-        "date": "June 20, 2025",
-        "time": "? - ?",
-        "location": "DICT Training Room",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Exam",
-        "agencies": [
-            "DICT"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "CDIIS Event: Content Creation: The New Influencer Marketing",
-        "date": "June 20, 2025",
-        "time": "? - ?",
-        "location": "Online Webinar",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Webinar",
-        "agencies": [
-            "CDIIS"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "DICT Event: School in a Bag",
-        "date": "June 24, 2025",
-        "time": "? - ?",
-        "location": "Brgy. Rogongon, Iligan City",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Outreach Program",
-        "agencies": [
-            "DICT"
-        ],
-        "isUpcoming": true
-    },
-    {
-        "title": "CDIIS Event: DCIH Creatives Co-work Space and MSMEs Virtual Office Space Briefing",
-        "date": "June 25, 2025",
-        "time": "? - ?",
+        "title": "Smart Systems for Digital Transformation",
+        "date": "2025-06-23",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
         "location": "Digital Creatives Hub",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "CDIIS",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "DCIH Creatives Cowork Space and MSMEs Virtual Office Space Briefing",
+        "date": "2025-06-25",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "ICT Month 2025 Culmination",
+        "date": "2025-06-26",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Robinsons Place Iligan",
+        "attendees": null,
+        "description": null,
         "type": "Public Event",
         "agencies": [
-            "CDIIS"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "CDIIS Event: Smart Systems for Digital Transformation",
-        "date": "June 26, 2025",
-        "time": "? - ?",
-        "location": "Online Webinar",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Webinar",
+        "title": "Digital Tourism and Community-Based Digital Nomad Tourism FGD",
+        "date": "2025-06-27",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
         "agencies": [
-            "CDIIS"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "ML Tournament Championship and Awarding",
-        "date": "June 27, 2025",
-        "time": "? - ?",
-        "location": "Robinsons Place Iligan",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Public Event",
+        "title": "Open House and Exploring Gadgets",
+        "date": "2025-06-28",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Showcase",
         "agencies": [
-            "CDIIS"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "DEVCON Kids Robotics Tournament",
-        "date": "June 27, 2025",
-        "time": "? - ?",
-        "location": "Robinsons Place Iligan",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Tournament",
+        "title": "Iligan Freelancers Meetup",
+        "date": "2025-06-28",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Meetup",
         "agencies": [
-            "DEVCON Iligan"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     },
     {
-        "title": "Culmination Activity",
-        "date": "June 27, 2025",
-        "time": "? - ?",
-        "location": "Robinsons Place Iligan",
-        "attendees": "? Attendees",
-        "description": "Celebration of achievements, award presentations, and closing remarks. Thank you reception to follow.",
-        "type": "Public Event",
+        "title": "Tech UPPP!! Iligan",
+        "date": "2025-06-28",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
         "agencies": [
-            "CDIIS"
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
         ],
-        "isUpcoming": true
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
+    },
+    {
+        "title": "Intro to Drone",
+        "date": "2025-06-30",
+        "time": {
+            "isALlDay": true,
+            "start": null,
+            "end": null
+        },
+        "location": "Digital Creatives Hub",
+        "attendees": null,
+        "description": null,
+        "type": "Seminar",
+        "agencies": [
+            "CDIIS",
+            "DEVCON Iligan",
+            "Digital Creatives Hub Iligan"
+        ],
+        "posts": [
+            {
+                "poster": "DICT",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "DEVCON Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Tentative Post Title",
+                "description": "Tentative Post Description",
+                "link": "",
+                "thumbnail": ""
+            }
+        ]
     }
 ]
