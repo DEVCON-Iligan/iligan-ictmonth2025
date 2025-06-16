@@ -10,7 +10,7 @@ import InfoCard from '@/components/InfoCard';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   // Responsive Header state variables
   const [headerClass, setHeaderClass] = useState('');
   const [showAltHeaderContent, setShowAltHeaderContent] = useState(false);
@@ -40,7 +40,7 @@ const Index = () => {
         setShowAltHeaderContent(true);
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     handleScroll();
 
@@ -56,7 +56,7 @@ const Index = () => {
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216000/ntc_logo_kw2inh.webp", name: "National Telecommunications Commission Logo" },
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216448/national_privacy_commission_logo_tkbgv6.webp", name: "National Privacy Commission" }
   ]
-  
+
   const events = eventsData;
 
   const navigationItems = [
@@ -80,17 +80,17 @@ const Index = () => {
       </div>
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
-        <div className="container mx-auto pl-6 pr-16 py-4">
+        <div className="container">
           {showAltHeaderContent ? (
-            <div className="mx-auto gap-y-4">
-              <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24">
+            <div className="mx-auto gap-y-4 flex-row items-center justify-center">
+              <div className='w-full h-full bg-green-500 flex flex-row justify-center items-center'>
                 {AgencyLogos.map((logo, index) => (
                   <img src={logo.logo} alt={logo.name} className="w-20 h-auto object-contain" key={index} />
                 ))}
               </div>
-              <h2 className="mx-auto text-2xl font-bold text-center text-[#224590]">
-                Presents
-              </h2>
+              {/* <div className="flex items-center justify-center mx-auto pt-1.5 gap-x-24 bg-red-500">
+                
+              </div> */}
             </div>
           ) : (
             <>
@@ -99,7 +99,7 @@ const Index = () => {
                   <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
                   <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
                 </div>
-                
+
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
                   {navigationItems.map((item) => (
@@ -149,15 +149,15 @@ const Index = () => {
         </div>
       </header>
       {/* Hero Section */}
-      <section 
-        id="home" 
+      <section
+        id="home"
         className="relative z-10 py-32 pt-40"
         style={{
           backgroundImage: `url('https://res.cloudinary.com/df9iielq1/image/upload/v1749214471/BG_j9ocod.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-        }}  
+        }}
         ref={heroRef}
       >
         <div className="container mx-auto pt-2 px-6 text-center">
@@ -179,12 +179,12 @@ const Index = () => {
               JUNE 2025
             </h2>
           </FloatingElement>
-          
+
           <div className="flex flex-wrap justify-center gap-6 mb-16">
-            <InfoCard icon={<Calendar size={32}/>} title="June 2025" subtitle="" iconColor="text-purple-400" />
-            <InfoCard icon={<Users size={32}/>} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
-            <InfoCard icon={<Zap size={32}/>} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400"/>
-            <InfoCard icon={<Trophy size={32}/>} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400"/>
+            <InfoCard icon={<Calendar size={32} />} title="June 2025" subtitle="" iconColor="text-purple-400" />
+            <InfoCard icon={<Users size={32} />} title="500+ Attendees" subtitle="Industry Leaders" iconColor="text-blue-400" />
+            <InfoCard icon={<Zap size={32} />} title="20+ Sessions" subtitle="Tech Topics" iconColor="text-green-400" />
+            <InfoCard icon={<Trophy size={32} />} title="Awards Night" subtitle="Recognition" iconColor="text-orange-400" />
           </div>
         </div>
       </section>
