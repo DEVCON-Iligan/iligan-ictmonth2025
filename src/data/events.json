@@ -3,18 +3,26 @@
         "title": "mBot Workshop Day 1",
         "date": "2025-06-07",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Workshop",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -45,18 +53,26 @@
         "title": "mBot Workshop Day 2",
         "date": "2025-06-08",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Workshop",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -87,17 +103,22 @@
         "title": "Digital Creatives in Animation Design",
         "date": "2025-06-13",
         "time": {
-            "isALlDay": false,
             "start": "14:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -121,18 +142,26 @@
         "title": "Scratch Game Development Workshop",
         "date": "2025-06-14",
         "time": {
-            "isALlDay": false,
             "start": "9:00",
             "end": "15:00"
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": null,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Workshop",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -163,18 +192,26 @@
         "title": "From Influence to Impact: The Rise of the Content Creator",
         "date": "2025-06-14",
         "time": {
-            "isALlDay": false,
             "start": "15:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -205,18 +242,26 @@
         "title": "Vibe Coding Seminar",
         "date": "2025-06-15",
         "time": {
-            "isALlDay": false,
             "start": "14:00",
             "end": "16:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -247,18 +292,26 @@
         "title": "Mobile Legends Tournament Qualifying Stage Day 1",
         "date": "2025-06-19",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Tournament",
         "agencies": [
-            "LGU",
-            "ICI",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "LGU",
+                "logo": ""
+            },
+            {
+                "name": "ICI",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -289,18 +342,26 @@
         "title": "Mobile Legends Tournament Qualifying Stage Day 2",
         "date": "2025-06-20",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Tournament",
         "agencies": [
-            "LGU",
-            "ICI",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "LGU",
+                "logo": ""
+            },
+            {
+                "name": "ICI",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -331,18 +392,26 @@
         "title": "Smart Systems for Digital Transformation",
         "date": "2025-06-23",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -373,18 +442,26 @@
         "title": "DCIH Creatives Cowork Space and MSMEs Virtual Office Space Briefing",
         "date": "2025-06-25",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -415,18 +492,26 @@
         "title": "ICT Month 2025 Culmination",
         "date": "2025-06-26",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Robinsons Place Iligan",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Public Event",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -457,18 +542,26 @@
         "title": "Digital Tourism and Community-Based Digital Nomad Tourism FGD",
         "date": "2025-06-27",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -499,18 +592,26 @@
         "title": "Open House and Exploring Gadgets",
         "date": "2025-06-28",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Showcase",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -541,13 +642,12 @@
         "title": "Iligan Freelancers Meetup",
         "date": "2025-06-28",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Meetup",
         "agencies": [
             "CDIIS",
@@ -583,18 +683,26 @@
         "title": "Tech UPPP!! Iligan",
         "date": "2025-06-28",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
@@ -625,18 +733,26 @@
         "title": "Intro to Drone",
         "date": "2025-06-30",
         "time": {
-            "isALlDay": true,
-            "start": null,
-            "end": null
+            "start": "8:00",
+            "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": null,
-        "description": null,
+        "attendees": 20,
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
         "type": "Seminar",
         "agencies": [
-            "CDIIS",
-            "DEVCON Iligan",
-            "Digital Creatives Hub Iligan"
+            {
+                "name": "CDIIS",
+                "logo": ""
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": ""
+            },
+            {
+                "name": "Digital Creatives Hub Iligan",
+                "logo": ""
+            }
         ],
         "registerLink": "",
         "posts": [
