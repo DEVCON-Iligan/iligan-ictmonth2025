@@ -221,38 +221,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* RECENT EVENTS */}
-
-      {/* Call to Action */}
-      <section id="register" className="relative z-10 py-20">
-        <div className="container mx-auto px-6 text-center">
-          <div className="glass-dark p-12 rounded-3xl max-w-4xl mx-auto">
-            <Coffee className="h-16 w-16 text-purple-400 mx-auto mb-6 animate-float" />
-            <h2 className="text-4xl font-bold mb-6 text-gradient-purple">
-              Ready to Join Us?
-            </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-
-              Don't miss out on this incredible opportunity to connect, learn, and innovate.
-              Early bird pricing available until February 28th.
-
-              Don't miss out on this incredible opportunity to connect, learn,
-              and innovate. Early bird pricing available until February 28th.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 px-8 py-3"
-              >
-                Register Now
-              </Button>
-              <Button size="lg" variant="outline" className="border-purple-500/50 text-purple-300 hover:bg-purple-500/10 px-8 py-3 transition duration-300 ease-in-out">
-                View Schedule
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/10 py-12">
         <div className="container mx-auto px-6">
