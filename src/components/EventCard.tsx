@@ -9,7 +9,7 @@ interface EventCardProps {
   attendees: string;
   description: string;
   type: string;
-  organizer?: string;
+  agencies?: string;
   isUpcoming?: boolean;
 }
 
@@ -21,7 +21,7 @@ const EventCard = ({
   attendees, 
   description, 
   type,
-  organizer,
+  agencies,
   isUpcoming = false 
 }: EventCardProps) => {
   return (
@@ -34,9 +34,9 @@ const EventCard = ({
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <div className="span-group flex items-center gap-2 mb-2">
-              {organizer && (
+              {agencies.length > 0 && (
                 <span className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
-                  {organizer}
+                  {agencies}
                 </span>
               )}
               <span className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
