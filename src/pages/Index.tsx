@@ -254,30 +254,23 @@ const Index = () => {
       <footer className="relative z-10 border-t border-white/10 py-12">
         <div className="container mx-auto px-6">
           <div className="text-center">
-            <div className="flex items-center justify-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
-                <Code className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gradient-purple">
-                DECVON ICT
+            <div className="flex flex-col items-center justify-center space-x-3 mb-4">
+              <span className="text-sm mb-4">
+                Powered By
               </span>
+              <img
+                src="https://res.cloudinary.com/df9iielq1/image/upload/v1750156518/DEVCON-logo_1-removebg-preview_1_k2lgd0.svg"
+                alt="Devcon Text Logo"
+                className="w-20 h-fit sm:w-32 sm:h-fit object-contain"
+                draggable="false"
+              />
             </div>
             <p className="text-gray-400 mb-6">
-              Shaping the future of technology, one innovation at a time.
+              Iligan City | June 2025 | National ICT Month
             </p>
-            <div className="flex justify-center space-x-6 text-gray-400">
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-purple-400 transition-colors">
-                Contact Us
-              </a>
-            </div>
+            
             <p className="text-gray-500 text-sm mt-6">
-              © 2025 DECVON ICT. All rights reserved.
+              © 2025 Digital Bayanihan by LGU Iligan ICTC. All rights reserved.
             </p>
           </div>
         </div>
