@@ -35,23 +35,27 @@ const EventCard = ({
   isGlass = true,
 }: EventCardProps) => {
   return (
-    <Card className={`${isGlass ? "bg-white/50 hover:bg-white/50 backdrop-blur-[9px]" : "bg-white hover:bg-white"} p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl`}>
+    <Card className={`${isGlass ? "bg-white/50 hover:bg-white/50 backdrop-blur-[9px]" : "bg-white hover:bg-white"} p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}>
       <div className="flex flex-col space-y-4">
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <h3 className="text-left text-xl font-bold text-black mb-2 group-hover:text-gradient-purple transition-all duration-300">
               {title}
             </h3>
-            <div className="span-group flex items-center gap-2 mb-2">
+            <div className="flex flex-wrap items-center gap-2 mb-2 w-full">
               {agencies.map((agency, index) => {
                 const agencyName = typeof agency === 'string' ? agency : agency.name;
                 return (
-                  <span className="px-3 py-1 text-xs font-medium bg-purple-500/20 text-purple-300 rounded-full border border-purple-500/30">
+                  <span
+                    key={index}
+                    className="px-3 py-1 text-xs font-medium bg-[#6bb0d7]/20 text-blue-950 rounded-full border border-blue-950/30 whitespace-nowrap"
+                  >
                     {agencyName}
                   </span>
                 );
               })}
             </div>
+
             <p className="text-left text-black text-sm leading-relaxed">
               {description}
             </p>

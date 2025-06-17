@@ -149,12 +149,12 @@ const Index = () => {
             </h2>
           </FloatingElement>
           <FloatingElement delay="0.4s">
-            <div className="border-2 border-[#3F4192] rounded-full w-fit h-fit mx-auto sm:mt-4 mt-3 py-2 px-8">
-              <h2 className="text-xs md:text-2xl font-semibold text-[#3F4192] animate-fade-in-up">
+            <div className="border-2 border-[#1a73a7] rounded-full w-fit h-fit mx-auto sm:mt-4 mt-3 py-2 px-8">
+              <h2 className="text-xs md:text-2xl font-semibold text-[#1a73a7] animate-fade-in-up">
                 WALANG IWANAN SA DIGITAL BAYANIHAN
               </h2>
             </div>
-            <h2 className="text-sm md:text-2xl text-[#3F4192] mt-2 animate-fade-in-up">
+            <h2 className="text-sm md:text-2xl text-[#1a73a7] mt-2 animate-fade-in-up">
               June 2025
             </h2>
           </FloatingElement>
@@ -224,9 +224,7 @@ const Index = () => {
                 <div className="flex-shrink-0 pt-6">
                   <TimelineConnector isLast={index === events.length - 1} />
                 </div>
-                <div className="flex-1">
-                  <EventCard {...event} />
-                </div>
+                <EventCard {...event} />
               </div>
             ))}
           </div>
