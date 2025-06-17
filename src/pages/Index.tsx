@@ -8,7 +8,10 @@ import { useEffect, useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import { useHeaderScroll } from '@/hooks/use-header-scroll';
 import { useHeaderAnimation } from '@/hooks/use-header-animation';
-import { getOngoingEvents } from '@/components/utils/get-current-event';
+import { getOngoingEvents } from '@/components/utils/get-current-events';
+import { getNextDayEventsSorted } from '@/components/utils/get-tomorrow-events';
+import { getUpcomingEvents } from '@/components/utils/get-upcoming-events';
+import { getPastEvents } from '@/components/utils/get-past-events';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,12 +24,12 @@ const Index = () => {
   const [clientDate, setClientDate] = useState(new Date());
 
   const events = eventsData;
-
+  const currentEvents = getOngoingEvents(events, clientDate);
+  const tomorrowEvents = getNextDayEventsSorted(eventsData, clientDate);
+  const upcomingEvents = getUpcomingEvents(eventsData, clientDate);
+  const pastEvents = getPastEvents(eventsData, clientDate);
 
   useEffect(() => {
-    const currentEvents = getOngoingEvents(events, clientDate);
-    console.log(JSON.stringify(currentEvents))
-
     const interval = setInterval(() => {
       setClientDate(new Date());
     }, 1000);
@@ -164,43 +167,30 @@ const Index = () => {
               June 2025
             </h2>
           </FloatingElement>
-          <h1 className='text-4xl mt-32 font-bold'>Happening Now</h1>
+          <h1 className='text-4xl md:text-5xl font-bold mb-6 text-[#165e85] mt-32'>Happening Now</h1>
           <div className='m-auto max-w-[1200px] mt-8 w-full h-fit flex flex-col justify-center'>
-            <div className='flex-1'>
-              <EventCard title={'Test 1'} date={'Testmonth 23, 2025'} time={{
-                start: '06:00',
-                end: '18:00'
-              }} location={'Test Village'} attendees={'5'} description={'A Testchu'} type={'TestType'} posts={
-                [
-                  {
-                    "poster": "CDIIS",
-                    "title": "Tentative Post Title",
-                    "description": "Tentative Post Description",
-                    "link": "",
-                    "thumbnail": ""
-                  },
-                  {
-                    "poster": "DEVCON Iligan",
-                    "title": "Tentative Post Title",
-                    "description": "Tentative Post Description",
-                    "link": "",
-                    "thumbnail": ""
-                  },
-                  {
-                    "poster": "Digital Creatives Hub Iligan",
-                    "title": "Tentative Post Title",
-                    "description": "Tentative Post Description",
-                    "link": "",
-                    "thumbnail": ""
-                  }
-                ]
-              } agencies={[
-                "CDIIS",
-                "DEVCON Iligan",
-                "Digital Creatives Hub Iligan"
-              ]} />
-            </div>
-            <div className='w-full h-10'>
+            {currentEvents.length > 0 ? (
+              currentEvents.map((event, index) => (
+                <div className='flex-1'>
+                  <EventCard
+                    key={index}
+                    title={event.title}
+                    date={event.date}
+                    time={event.time}
+                    location={event.location}
+                    attendees={event.attendees}
+                    description={event.description}
+                    type={event.type}
+                    posts={event.posts}
+                    agencies={event.agencies}
+                    isGlass={true}
+                  />
+                </div>
+              ))
+            ) : (
+              <></>
+            )}
+            <div className='w-full h-32'>
 
             </div>
           </div>
@@ -221,7 +211,30 @@ const Index = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            {events.map((event, index) => (
+            {upcomingEvents.map((event, index) => (
+              <div
+                key={index}
+                className="flex gap-8 mb-12 animate-fade-in-up"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex-shrink-0 pt-6">
+                  <TimelineConnector isLast={index === events.length - 1} />
+                </div>
+                <EventCard {...event} />
+              </div>
+            ))}
+          </div>
+          <div className="text-center mb-16 mt-32">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
+              Past Events
+            </h2>
+            <p className="text-xl text-black/70 max-w-2xl mx-auto">
+              Events that already happened
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            {pastEvents.map((event, index) => (
               <div
                 key={index}
                 className="flex gap-8 mb-12 animate-fade-in-up"
