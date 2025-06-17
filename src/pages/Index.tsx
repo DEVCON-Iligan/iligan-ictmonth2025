@@ -167,8 +167,10 @@ const Index = () => {
               June 2025
             </h2>
           </FloatingElement>
-          <h1 className='text-4xl md:text-5xl font-bold mb-6 text-[#165e85] mt-32'>Happening Now</h1>
-          <div className='m-auto max-w-[1200px] mt-8 w-full h-fit flex flex-col justify-center'>
+          {currentEvents.length > 0 && (
+            <h1 className='text-4xl md:text-5xl font-bold mb-6 text-[#165e85] mt-32'>Happening Now</h1>
+          )}
+          <div className='m-auto max-w-[1200px] mt-8 w-full h-fit flex flex-col justify-cent  er'>
             {currentEvents.length > 0 ? (
               currentEvents.map((event, index) => (
                 <div className='flex-1'>

@@ -1,5 +1,7 @@
 import { Calendar, Clock, MapPin, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Button } from "./ui/button";
+import { useEffect, useState } from "react";
 
 interface EventCardProps {
   title: string;
@@ -20,6 +22,7 @@ interface EventCardProps {
     link: string;
     thumbnail: string;
   }[];
+  registerLink?: string;
   isGlass?: boolean;
 }
 
@@ -31,9 +34,39 @@ const EventCard = ({
   attendees,
   description,
   type,
+  posts,
   agencies,
+  registerLink,
   isGlass = true,
 }: EventCardProps) => {
+  const currentDateTime = new Date()
+  const [isRegistrationValid, setIsRegistrationValid] = useState(false)
+
+  useEffect(() => {
+    try {
+      const eventDate = new Date(date);
+      let startTime = null;
+      let endTime = null;
+
+      if (time?.start && time?.end) {
+        const [startHours, startMinutes] = time.start.split(':');
+        const [endHours, endMinutes] = time.end.split(':');
+
+        startTime = new Date(eventDate);
+        startTime.setHours(parseInt(startHours), parseInt(startMinutes));
+
+        endTime = new Date(eventDate);
+        endTime.setHours(parseInt(endHours), parseInt(endMinutes));
+
+        setIsRegistrationValid(startTime > currentDateTime);
+      } else {
+        setIsRegistrationValid(eventDate > currentDateTime);
+      }
+    } catch (e) {
+      setIsRegistrationValid(false);
+    }
+  }, [date, time])
+
   return (
     <Card className={`${isGlass ? "bg-white/50 hover:bg-white/50 backdrop-blur-[9px]" : "bg-white hover:bg-white"} p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}>
       <div className="flex flex-col space-y-4">
@@ -55,7 +88,6 @@ const EventCard = ({
                 );
               })}
             </div>
-
             <p className="text-left text-black text-sm leading-relaxed">
               {description}
             </p>
@@ -80,6 +112,26 @@ const EventCard = ({
             <span className="text-sm">{attendees} attendees </span>
           </div>
         </div>
+        <div className="w-full flex justify-end">
+          {isRegistrationValid && registerLink.length > 0 && (
+            <a href={registerLink} target="_blank" rel="noopener noreferrer">
+              <Button className="b-[#6bb0d7] hover:bg-[#6bb0d7]/70 text-white">Register Now</Button>
+            </a>
+          )}
+        </div>
+
+        {!isRegistrationValid && posts && posts.length > 0 && (
+            <div className="w-full flex flex-wrap gap-4 mt-4 bg-[#fafafa] p-4 rounded-lg border border-gray-200">
+            {posts && posts.length > 0 && posts.map((post, index) => (
+              <div key={index} className="flex flex-col w-full max-w-60 rounded-2xl bg-[#FFFFFF] border-[1px] border-gray-200">
+                <img src={post.thumbnail} alt={post.title} className="w-full h-32 object-cover rounded-lg mb-2" />
+                <h4 className="text-sm font-semibold text-black px-4 py-2">{post.title}</h4>
+                <p className="text-xs text-gray-600 px-4 py-2 line-clamp-5 overflow-hidden">{post.description}</p>
+                <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-[#6bb0d7] hover:underline mt-1 p-4">Read more</a>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </Card>
   );
