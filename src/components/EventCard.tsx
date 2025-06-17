@@ -79,12 +79,22 @@ const EventCard = ({
               {agencies.map((agency, index) => {
                 const agencyName = typeof agency === 'string' ? agency : agency.name;
                 return (
-                  <span
-                    key={index}
-                    className="px-3 py-1 text-xs font-medium bg-[#6bb0d7]/20 text-blue-950 rounded-full border border-blue-950/30 whitespace-nowrap"
-                  >
-                    {agencyName}
-                  </span>
+                  <div className="w-fit h-fit flex flex-row items-center justify-center bg-[#6bb0d7]/20 text-blue-950 rounded-full border border-blue-950/30 p-[2px]" key={index}>
+                    <img
+                      key={index}
+                      src={typeof agency === 'string' ? '' : agency.logo}
+                      alt={agencyName}
+                      className="h-6 w-6 rounded-full border border-gray-300"
+                      draggable="false"
+                    />
+                    <span
+                      key={index}
+                      className="p-1 text-xs font-medium whitespace-nowrap"
+                    >
+
+                      {agencyName}
+                    </span>
+                  </div>
                 );
               })}
             </div>
@@ -121,7 +131,7 @@ const EventCard = ({
         </div>
 
         {!isRegistrationValid && posts && posts.length > 0 && (
-            <div className="w-full flex flex-wrap gap-4 mt-4">
+          <div className="w-full flex flex-wrap gap-4 mt-4">
             {posts && posts.length > 0 && posts.map((post, index) => (
               <div key={index} className="flex flex-col w-full max-w-60 rounded-2xl bg-[#f3f2f7] border-[1px] border-gray-200">
                 <img src={post.thumbnail} alt={post.title} className="w-full h-32 object-cover rounded-lg mb-2" />
