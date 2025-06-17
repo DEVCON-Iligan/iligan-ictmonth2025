@@ -8,7 +8,6 @@ type EventType = {
   location: string;
   attendees: number;
   description: string;
-  type: string;
   agencies: { name: string; logo: string }[] | string[];
   registerLink: string;
   posts: {

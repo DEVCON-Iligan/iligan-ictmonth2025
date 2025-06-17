@@ -18,10 +18,8 @@ export const useHeaderScroll = (
 
             if (scrollY === 0) {
                 setHeaderClass('');
-            } else if (scrollY > 0 && scrollY < heroTop + heroHeight - headerHeight) {
-                setHeaderClass('glass backdrop-blur-lg border-b border-white/10');
             } else {
-                setHeaderClass('glass-dark backdrop-blur-lg border-b border-white/10');
+                setHeaderClass('glass backdrop-blur-lg border-b border-white/10');
             }
 
             // Change content when scrolled down

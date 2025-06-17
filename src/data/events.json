@@ -9,7 +9,6 @@
         "location": "Anahaw Amphitheater",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -37,7 +36,6 @@
         "location": "Online Webinar",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -57,7 +55,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Workshop",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -107,7 +104,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Workshop",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -157,7 +153,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -177,7 +172,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -201,7 +195,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Workshop",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -251,7 +244,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -279,7 +271,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -315,7 +306,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -335,7 +325,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -355,7 +344,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -383,7 +371,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -422,7 +409,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -450,7 +436,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Competition",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -500,7 +485,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "DICT",
@@ -528,7 +512,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Competition",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -578,7 +561,6 @@
         "location": "DICT Training Room",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Exam",
         "agencies": [
             {
                 "name": "DICT",
@@ -606,7 +588,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Workshop",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -656,7 +637,6 @@
         "location": "Brgy. Rogongon, Iligan City",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Outreach Program",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -695,7 +675,6 @@
         "location": "Mindanao State University - Iligan Institute of Technology",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Competition",
         "agencies": [
             {
                 "name": "Mindanao State University - Iligan Institute of Technology",
@@ -734,7 +713,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -780,7 +758,6 @@
         "location": "Online Webinar",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -826,7 +803,6 @@
         "location": "Robinsons Place Iligan",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -876,7 +852,6 @@
         "location": "Robinsons Place Iligan",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Competition",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -915,7 +890,6 @@
         "location": "Robinsons Place Iligan",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Competition",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -954,7 +928,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -1004,7 +977,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -1043,7 +1015,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Public Event",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -1093,7 +1064,6 @@
         "location": "Digital Creatives Hub",
         "attendees": 20,
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-        "type": "Seminar",
         "agencies": [
             {
                 "name": "CDIIS",

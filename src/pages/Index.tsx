@@ -1,5 +1,5 @@
 
-import { Code, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
@@ -12,7 +12,6 @@ import { getOngoingEvents } from '@/components/utils/get-current-events';
 import { getNextDayEventsSorted } from '@/components/utils/get-tomorrow-events';
 import { getUpcomingEvents } from '@/components/utils/get-upcoming-events';
 import { getPastEvents } from '@/components/utils/get-past-events';
-import { startCountdownFormatted } from '@/components/utils/start-countdown';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,14 +29,11 @@ const Index = () => {
   const upcomingEvents = getUpcomingEvents(eventsData, clientDate);
   const pastEvents = getPastEvents(eventsData, clientDate);
 
-
-  // Uncomment the following lines to enable client date updates every second
-  // Error in Console
   useEffect(() => {
-    // const interval = setInterval(() => {
-    //   setClientDate(new Date());
-    // }, 1000);
-    // return () => clearInterval(interval);
+    const interval = setInterval(() => {
+      setClientDate(new Date());
+    }, 1000);
+    return () => clearInterval(interval);
   }, []);
 
   // Header Scroll and Animation Hooks
@@ -86,8 +82,8 @@ const Index = () => {
           <div ref={mainHeaderRef} className='w-screen flex flex-col'>
             <div className="flex items-center justify-between pl-3 pr-6">
               <div className="flex items-center space-x-1.5">
-                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className={`w-20 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_4px_rgba(255,255,255,1)]' : ''}`} />
-                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className={`w-36 h-auto object-contain ${headerClass.includes('glass-dark') ? 'drop-shadow-[0_0_1.5px_rgba(255,255,255,1)]' : ''}`} />
+                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215547/digital_bayanihan_logo_only_ie6y3f.webp" alt="Digital Bayanihan Logo" className="w-20 h-auto object-contain" />
+                <img src="https://res.cloudinary.com/df9iielq1/image/upload/v1749215751/digital_bayanihan_logo_word_dmdyr5.webp" alt="Digital Bayanihan Wordmark" className="w-36 h-auto object-contain" />
               </div>
 
               {/* Desktop Navigation */}
@@ -96,7 +92,7 @@ const Index = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`${headerClass.includes('glass-dark') ? 'text-black/60 hover:text-[#335c74]' : 'text-black/60 hover:text-[#335c74]/100'} transition-colors duration-200 font-medium`}
+                    className="text-[#335c74] hover:text-[#568cd8] transition-colors duration-200 font-medium"
                   >
                     {item.name}
                   </a>
@@ -122,7 +118,7 @@ const Index = () => {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="text-gray-300 hover:text-purple-400 transition-colors duration-200 font-medium"
+                        className="text-[#335c74] hover:text-[#568cd8] transition-colors duration-200 font-medium"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
@@ -181,14 +177,13 @@ const Index = () => {
             {currentEvents.length > 0 && (
               <div className='flex-1'>
                 <EventCard
-                  key={0}
+                  key={`current-${currentEvents[0].title}`}
                   title={currentEvents[0].title}
                   date={currentEvents[0].date}
                   time={currentEvents[0].time}
                   location={currentEvents[0].location}
                   attendees={currentEvents[0].attendees}
                   description={currentEvents[0].description}
-                  type={currentEvents[0].type}
                   posts={currentEvents[0].posts}
                   agencies={currentEvents[0].agencies}
                   registerLink={currentEvents[0].registerLink}
@@ -197,17 +192,16 @@ const Index = () => {
               </div>
             )}
             {tomorrowEvents.length > 0 && currentEvents.length <= 0 && (
-              <div className='w-full h-96'>
+              <div className='mx-auto w-10/12 h-96'>
                 <div className='flex-1'>
                   <EventCard
-                    key={0}
+                    key={`tomorrow-${tomorrowEvents[0].title}`}
                     title={tomorrowEvents[0].title}
                     date={tomorrowEvents[0].date}
                     time={tomorrowEvents[0].time}
                     location={tomorrowEvents[0].location}
                     attendees={tomorrowEvents[0].attendees}
                     description={tomorrowEvents[0].description}
-                    type={tomorrowEvents[0].type}
                     posts={tomorrowEvents[0].posts}
                     agencies={tomorrowEvents[0].agencies}
                     registerLink=''
@@ -216,11 +210,8 @@ const Index = () => {
                 </div>
               </div>
             )}
-            <div className='w-full h-32'>
-
-            </div>
+            <div className='w-full h-32' />
           </div>
-
         </div>
       </section>
 
@@ -246,7 +237,7 @@ const Index = () => {
                 <div className="flex-shrink-0 pt-6">
                   <TimelineConnector isLast={index === upcomingEvents.length - 1} />
                 </div>
-                <EventCard key={`upcoming-${event.title}-${index}`} {...event} />
+                <EventCard key={`upcoming-card-${event.title}-${index}`} {...event} />
               </div>
             ))}
           </div>
@@ -269,7 +260,7 @@ const Index = () => {
                 <div className="flex-shrink-0 pt-6">
                   <TimelineConnector isLast={index === pastEvents.length - 1} />
                 </div>
-                <EventCard key={`past-${event.title}-${index}`} {...event} />
+                <EventCard key={`past-card-${event.title}-${index}`} {...event} />
               </div>
             ))}
           </div>
