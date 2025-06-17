@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import { useHeaderScroll } from '@/hooks/use-header-scroll';
 import { useHeaderAnimation } from '@/hooks/use-header-animation';
+import { useClientDate } from '@/hooks/use-client-date';
 import { getOngoingEvents } from '@/components/utils/get-current-events';
 import { getNextDayEventsSorted } from '@/components/utils/get-tomorrow-events';
 import { getUpcomingEvents } from '@/components/utils/get-upcoming-events';
@@ -21,7 +22,7 @@ const Index = () => {
   const heroRef = useRef<HTMLElement>(null);
   const altHeaderRef = useRef<HTMLDivElement>(null);
   const mainHeaderRef = useRef<HTMLDivElement>(null);
-  const [clientDate, setClientDate] = useState(new Date());
+  const clientDate = useClientDate();
 
   const events = eventsData;
   const currentEvents = getOngoingEvents(events, clientDate);
@@ -29,17 +30,39 @@ const Index = () => {
   const upcomingEvents = getUpcomingEvents(eventsData, clientDate);
   const pastEvents = getPastEvents(eventsData, clientDate);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setClientDate(new Date());
-    }, 1000);
-    return () => clearInterval(interval);
-  }, []);
-
   // Header Scroll and Animation Hooks
   const { headerClass, showAltHeaderContent } = useHeaderScroll(headerRef, heroRef);
   useHeaderAnimation(showAltHeaderContent, mainHeaderRef, altHeaderRef);
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const href = e.currentTarget.href;
+    const targetId = href.substring(href.indexOf('#') + 1);
+
+    if (targetId === 'home') {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const headerOffset = headerRef.current?.offsetHeight || 0;
+        const extraPadding = 24;
+        const totalOffset = headerOffset + extraPadding;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - totalOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+
+    setIsMenuOpen(false);
+  };
+  
   const AgencyLogos = [
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749215905/bagong_pilipinas_logo_dbz6ul.webp", name: "Bagong Pilipinas Logo" },
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216232/cicc_logo_d8eigg.webp", name: "Cybercrime Investigation and Coordinating Center Logo" },
@@ -48,11 +71,10 @@ const Index = () => {
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216448/national_privacy_commission_logo_tkbgv6.webp", name: "National Privacy Commission" }
   ]
 
-
   const navigationItems = [
     { name: "Home", href: "#home" },
     { name: "Upcoming Events", href: "#upcoming-events" },
-    { name: "Previous Events", href: "#past-events" },
+    { name: "Past Events", href: "#past-events" },
   ];
 
   return (
@@ -92,6 +114,7 @@ const Index = () => {
                   <a
                     key={item.name}
                     href={item.href}
+                    onClick={handleNavClick}
                     className="text-[#335c74] hover:text-[#568cd8] transition-colors duration-200 font-medium"
                   >
                     {item.name}
@@ -118,8 +141,8 @@ const Index = () => {
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={handleNavClick}
                         className="text-[#335c74] hover:text-[#568cd8] transition-colors duration-200 font-medium"
-                        onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
                       </a>
