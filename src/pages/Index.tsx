@@ -58,13 +58,13 @@ const Index = () => {
     <div className="min-h-screen text-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#6bb0d7]/50 rounded-full blur-3xl animate-pulse" />
         <div
-          className="absolute top-40 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"
+          className="absolute top-40 right-20 w-96 h-96 bg-[#6bb0d7]/50 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-20 left-1/3 w-80 h-80 bg-[#6bb0d7]/50 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "2s" }}
         />
       </div>
