@@ -121,13 +121,13 @@ const EventCard = ({
         </div>
 
         {!isRegistrationValid && posts && posts.length > 0 && (
-            <div className="w-full flex flex-wrap gap-4 mt-4 bg-[#fafafa] p-4 rounded-lg border border-gray-200">
+            <div className="w-full flex flex-wrap gap-4 mt-4">
             {posts && posts.length > 0 && posts.map((post, index) => (
-              <div key={index} className="flex flex-col w-full max-w-60 rounded-2xl bg-[#FFFFFF] border-[1px] border-gray-200">
+              <div key={index} className="flex flex-col w-full max-w-60 rounded-2xl bg-[#f3f2f7] border-[1px] border-gray-200">
                 <img src={post.thumbnail} alt={post.title} className="w-full h-32 object-cover rounded-lg mb-2" />
                 <h4 className="text-sm font-semibold text-black px-4 py-2">{post.title}</h4>
                 <p className="text-xs text-gray-600 px-4 py-2 line-clamp-5 overflow-hidden">{post.description}</p>
-                <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-[#6bb0d7] hover:underline mt-1 p-4">Read more</a>
+                <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-[#498cb3] hover:underline mt-1 p-4">Read more</a>
               </div>
             ))}
           </div>
