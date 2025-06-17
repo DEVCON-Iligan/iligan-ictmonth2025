@@ -8,11 +8,23 @@
         },
         "location": "Anahaw Amphitheater",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The National ICT Month Celebration in Iligan City officially commenced through a kickoff ceremony With the national theme “Walang Iwanan sa Digital Bayanihan”.",
         "agencies": [
             {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
+            },
+            {   
                 "name": "CDIIS",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157401/cdiis_logo_e9zqsi.png"
+            },
+            {
+                "name": "DICT",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157403/dict_logo_gch3fd.png"
+            },
+            {
+                "name": "DTI",
+                "logo": "N/A"
             }
         ],
         "registerLink": "",
@@ -23,6 +35,13 @@
                 "description": "NATIONAL ICT MONTH, GIBUKSAN Opisyal ng gibuksan ang kasaulogan sa  National  Information Communication Technology o ICT Month diin miduyog ang Lokal nga Kagamhanan sa Iligan pinanguluhan  sa Information Communication  Technology Center. Adunay 19 ka mga aktibidad nga alang sa tibook bulan nga selebrasyon. Diin  apil niini ang himoong Proficiency Exam alang sa mga ICT Professional, Cyber Security, Digital Literacy, Digital trainings ug uban pa. Ang selebrasyon  sa IC…",
                 "link": "https://www.facebook.com/asensonewsiligan/posts/pfbid0NjDAaDN2eKXZArSzccf4RatCfGmxvuLJkxB9QvTzgdHuxd7FZwVtA2neYMRtdhDNl?__cft__[0]=AZVs4JOR405KWCY0HyoXB-lc2hex3S6Iic7bjjf8d3R5UCYdUm-G9ND6FkR07j_-Ju54D2Za_JV0nWr6okfD_W9WTT_CPF7Gmyze38CZtl6LE_2_YIRAex9dVXtkIamXxhcUiN6kx8pkKLEb4jzXubJZ9OZEGUdWkPKqr5m8ObQOnw&__tn__=%2CO%2CP-R",
                 "thumbnail": "https://scontent.fmnl25-3.fna.fbcdn.net/v/t39.30808-6/503798684_669170829287365_935027891451988106_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEnxSXwOrW0vjNjzqMpCR9DEbzzLRoHrc8RvPMtGgetz6pN3-KXgxXgrVma6xeVbF5pNFec_M89RORYOqdVBDBV&_nc_ohc=koEEKhrMqGsQ7kNvwHahrCN&_nc_oc=Adl9KJtJebQXZ8v7GTSyv6RUJrST-kXb_bpmRBzIRzvL3Fd7l53NYpZbq8L7Hll_PWA&_nc_zt=23&_nc_ht=scontent.fmnl25-3.fna&_nc_gid=Hlb4WSnXT-0wUulYeqR3lQ&oh=00_AfNSWqGzyA4p_rDVhSY0gVEKUaCHuJsshYE8t0tcaNanJA&oe=6857110D"
+            },
+            {
+                "poster": "Center for Digital Iligan, Innovation & Sustainability",
+                "title": "Center for Digital Iligan, Innovation & Sustainability",
+                "description": "The National ICT Month Celebration in Iligan City officially commenced through a kickoff ceremony led by Mayor Frederick Siao, Chairman of the Iligan ICT Council, and the Department of Information and Communications Technology (DICT). With the national theme “Walang Iwanan sa Digital Bayanihan,” this year’s celebration focuses on inclusive and collaborative digital transformation—ensuring that all communities benefit from digital innovation. In his message highlight, Mr. Paul Hui, Executive Director of the Iligan ICT Council, City Consultant on Innovation Governance and head of the Center for Digital Iligan, Innovation & Sustainability (CDIIS), emphasized the city’s commitment to building industry-aligned digital ecosystems. Throughout June, the city will host various activities aligned with its Digital Cities Program, including digital skills training, innovation forums, and technology showcases—driven by the collaborative efforts of LGU Iligan, DICT, DTI, academe, and the private sector. #DigitalBayanihan #NICTM2025 #ICTMonth2025",
+                "link": "https://www.facebook.com/cdiisiligan/posts/pfbid025wUtNCnvek3paN4vP9XrJSX8ZoTyWtibV62CwbLZNfEFApbyptZ9waQyyHRG1vYl",
+                "thumbnail": "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/503584319_702425109207910_8195776459934678036_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGa4WzUC4QdVLdaA-qQ9AgvkCuboeJEGLuQK5uh4kQYu2SsGSbKLm3Ro5vInMFTYFNbNJ5h7U8_iN0DdRGr2slU&_nc_ohc=fhJZIzXj_AgQ7kNvwE6KYvG&_nc_oc=AdlJMiR3IZ72i_CvKYrM8QVdcODyDbEc96CL5xFdgpel2bK5DvCJnqIiHrK0Z6kChJY&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=hpXjhDD7I7pyV1NKrYvfsw&oh=00_AfO4jbNwivtuvAu5t_eDI5leX6Flbuc_3d8RDAGxTdMOqw&oe=6857446C"
             }
         ]
     },
@@ -53,8 +72,8 @@
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "attendees": 14,
+        "description": "A full-day hands-on workshop where they assemble and program their very own mBots. The kids learned the basics of robotics, logic building, and coding — all while having fun and collaborating with new friends in a safe, creative environment.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -102,8 +121,8 @@
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "attendees": 9,
+        "description": "Batch 2 of the DEVCON Kids: MBots Workshop successfully concluded today, June 8, 2025, at the Digital Creatives Hub ILIGAN.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -144,34 +163,42 @@
         ]
     },
     {
-        "title": "Tech Tuesday",
+        "title": "Tech Tuesday: Cyber Hygiene for MSMEs",
         "date": "2025-06-10",
         "time": {
             "start": "13:00",
-            "end": "17:00"
+            "end": "16:00"
         },
-        "location": "DICT Training Room",
+        "location": "DICT Iligan City - Digital Transformation Center Training Hall",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "A 3-hour workshop dedicated to enhancing cybersecurity awareness and promoting best practices within businesses.",
         "agencies": [
             {
                 "name": "DICT",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157403/dict_logo_gch3fd.png"
+            },
+            {
+                "name": "DTI",
+                "logo": "N/A"
+            },
+            {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
             }
         ],
-        "registerLink": "",
+        "registerLink": "https://forms.gle/pMdgeagrUaCfZEYM8",
         "posts": []
     },
     {
-        "title": "Digital Creatives in Animation Design",
+        "title": "𝗧𝘂𝗿𝗻 𝗜𝗱𝗲𝗮𝘀 𝗶𝗻𝘁𝗼 𝗠𝗼𝘁𝗶𝗼𝗻: 𝗟𝗲𝗮𝗿𝗻 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗗𝗲𝘀𝗶𝗴𝗻 𝗳𝗼𝗿 𝗠𝗮𝗿𝗸𝗲𝘁𝗶𝗻𝗴 & 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲𝘀!",
         "date": "2025-06-13",
         "time": {
             "start": "14:00",
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "attendees": 15,
+        "description": "Discover how animation design shapes powerful campaigns, brand visuals, and digital content in this special National ICT Month 2025 hybrid session!",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -180,10 +207,37 @@
             {
                 "name": "Digital Creatives Hub Iligan",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/dch_logo_qq5p0t.png"
+            },
+            {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
+            },
+            {
+                "name": "DTI",
+                "logo": "N/A"
+            },
+            {
+                "name": "Ameda Visuals",
+                "logo": "N/A"
             }
         ],
-        "registerLink": "",
-        "posts": []
+        "registerLink": "https://bit.ly/CDIISAniCreate",
+        "posts": [
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Digital Creatives Hub Iligan",
+                "description": "LOOK 👀 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲𝘀 𝗶𝗻 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗗𝗲𝘀𝗶𝗴𝗻 𝗛𝘆𝗯𝗿𝗶𝗱 𝗜𝗻𝗳𝗼 𝗦𝗲𝘀𝘀𝗶𝗼𝗻 is happening now at the Hub. #NationalICTMonth2025 #DigitalBayanihan #CreativeILIGAN #AnimationDesign #masterkii #AmedaVisuals #CDIIS",
+                "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid01LaouuaGN2U8YQTYyWFvNAYvQGUQvU1r8uc5nSEBsnqihipXLTrVBWuEMnnUcty8l&id=61574816864584",
+                "thumbnail": "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/506686770_122124949886827228_4290443321303628906_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHEtAULYRwUxeCP3qQo8p58WbHdopG9lVpZsd2ikb2VWqjlUdZGzg4V9eo4mU8xZXZoTjoka3wyoOtz7on1kA8C&_nc_ohc=cE0JVksYgN4Q7kNvwH5oHZi&_nc_oc=AdlORmQJs3KRt0MjnDb6kj91c2WGJ46fNfELiDD7WmMCZCbbeN9uz-0dde5UeNtuX8Y&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=6BcoTFBEwPiNjYYMBsueCw&oh=00_AfMZG50v2DKwS_Oc3nF2KL7PRSiG6Q_9FlzLcShxK2NTCw&oe=68576230"
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Digital Creatives Hub Iligan",
+                "description": "𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲𝘀 𝗶𝗻 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻 𝗗𝗲𝘀𝗶𝗴𝗻 𝗖𝗼𝗻𝗰𝗹𝘂𝗱𝗲𝘀 𝗦𝘂𝗰𝗰𝗲𝘀𝘀𝗳𝘂𝗹𝗹𝘆, 𝗜𝗴𝗻𝗶𝘁𝗲𝘀 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲 𝗣𝗼𝘁𝗲𝗻𝘁𝗶𝗮𝗹 In celebration of National ICT Month 2025, the City Government of Iligan—under the leadership of Mayor Frederick Siao—through the Center for Digital Iligan, Innovation & Sustainability (CDIIS), in partnership with Ameda Visuals, DTI Lanao del Norte, and the Creative Industries Development Council Iligan, successfully conducted the hybrid learning session “Digital Creatives in the Animation Design” on...",
+                "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid022QHbARjsJVTbeCoH9Ru3NhxrKC8HDkS1MfYzXB5LrtCrCnPX2mFaxjcwNaLPqzpsl&id=61574816864584",
+                "thumbnail": "https://scontent.fcgy1-3.fna.fbcdn.net/v/t39.30808-6/507643260_122125224530827228_335733348372503195_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEY4_wvFKMu0eHEkAcN2gEQ39q3ErrJmU7f2rcSusmZTiD_AN2vSANCYA9nXUoBY6TVptBkM2_9A6DckUNW6Ot_&_nc_ohc=6LbMAzxo5R0Q7kNvwE0ongu&_nc_oc=AdngltfXBVKIcF-TOe1yxXHmFewaglpW6NWGWxkzJ4bRrUMB3Zn3iYSbZvkt9m1zAI4&_nc_zt=23&_nc_ht=scontent.fcgy1-3.fna&_nc_gid=YbUb4H3ogAuxWWKvlp4irg&oh=00_AfOEf4gZ23t6QCENvqAee6mDaWTxgm4sQRCX-Gyv9eKOSw&oe=68575574"
+            }
+        ]
     },
     {
         "title": "Scratch Game Development Workshop",
@@ -209,7 +263,7 @@
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/dch_logo_qq5p0t.png"
             }
         ],
-        "registerLink": "",
+        "registerLink": "https://bit.ly/DEVCONIliganScratchICTMonth",
         "posts": [
             {
                 "poster": "DEVCON Iligan",
@@ -242,27 +296,50 @@
             "end": "17:00"
         },
         "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "attendees": 15,
+        "description": "Discover how content creators help brands grow through authentic storytelling, digital creativity, and real engagement — in this National ICT Month 2025 special session!",
         "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
+            },
+            {
+                "name": "DTI",
+                "logo": "N/A"
+            },
             {
                 "name": "CDIIS",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157401/cdiis_logo_e9zqsi.png"
             },
             {
-                "name": "DEVCON Iligan",
-                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/devcon_iligan_np35xb.jpg"
+                "name": "ICON - Iligan Connect",
+                "logo": "N/A"
             },
             {
                 "name": "Digital Creatives Hub Iligan",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/dch_logo_qq5p0t.png"
             }
         ],
-        "registerLink": "",
-        "posts": []
+        "registerLink": "https://bit.ly/CDIISInfluencers",
+        "posts": [
+            {
+                "poster": "Steps of Yorhe",
+                "title": "Steps of Yorhe",
+                "description": "1st time nako mag guest as a speaker today and nice man di sa feeling nga you're finally able to share your knowledge about something in a group of like-minded people, although wala kaayo ko ka'prepare with all the presentation, naa jpn naminaw, asked questions, like it's very interactive and fun at the same time. Thank you so much Digital Creatives Hub Iligan for giving us this platform to help our fellow content creators by sharing our journey in Content Creation 🫶🏻",
+                "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid02x8pEpiyJLuYrZMDPNknMSVaqrtsGNXiNp3KiZ4Y9Lya2SH9Xb94eobbdnto5FTYvl&id=100090344327957",
+                "thumbnail": "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/506467929_684168327937972_5039630410425985387_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE2GI6LeAzi0sf_5tvJKHA8IePmWX7CuEYh4-ZZfsK4Rg5hTndsXiuR-hPEOPhPovLFinMl3krjCRsF9R0wD02q&_nc_ohc=pGMpD7tKl3UQ7kNvwGEFp_U&_nc_oc=AdkKJjrOnmXfGHaM962KgxvqMhhTK3XlE10VLOU1XKThn1cL4nlOP5gtkzoDORSPtWc&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=C0A4i5zWBKuOtDy1IjCRYA&oh=00_AfP6AWSvmI0JA8bGaG02hzo3-BUptGRSIdvMy_m8JYtEdg&oe=6857768B"
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Digital Creatives Hub Iligan",
+                "description": "𝗖𝗼𝗻𝘁𝗲𝗻𝘁 𝗖𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝗙𝗼𝗿𝘂𝗺 𝗛𝗲𝗹𝗱 𝗮𝘁 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲𝘀 𝗛𝘂𝗯 𝗳𝗼𝗿 𝗡𝗮𝘁𝗶𝗼𝗻𝗮𝗹 𝗜𝗖𝗧 𝗠𝗼𝗻𝘁𝗵 𝟮𝟬𝟮𝟱. The Digital Creatives Hub hosted the hybrid session 'From Influence to Impact: The Rise of the Content Creator' as part of the National ICT Month 2025 celebration, held simultaneously via Google Meet and onsite at the Digital Creatives Hub, Iligan City.",
+                "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid02LKRNYp3Sjh4R25TNG6Lzh8zvymBNeMkBEq8uqiZLfCvgVK9VukBvJpqzBd4eiJLVl&id=61574816864584",
+                "thumbnail": "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/507983273_122125372622827228_4842490214916608843_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEz2QdLEVRa-l2DMslU4aVODdYpBl6wHacN1ikGXrAdp4N1ke1jxtPQ324N2Bu45WgWxbo3cIxdKCAE9-ZvK1bt&_nc_ohc=ts_50qhq9MsQ7kNvwF85OXa&_nc_oc=AdmIE6wF55VnCMX2MHEP4FNuN_i1zeHIZX-Ac6yhrHBpiuBNcldPFFxfOk20QFFhbYM&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=9hi9qHfFANAryAn1stdDhA&oh=00_AfO7DNcaeIAXe_KAkLYvjSjxZt8GGQBmRuwOM--5uOffKw&oe=68576A27"
+            }
+        ]
     },
     {
-        "title": "Vibe Coding Seminar",
+        "title": "Introduction to Vibe Coding: Building with AI",
         "date": "2025-06-15",
         "time": {
             "start": "14:00",
@@ -270,22 +347,26 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The Digital Creatives Hub – Iligan hosted Introduction to Vibe Coding: Building with AI — a beginner-friendly session that welcomed participants into the world of AI-assisted development.",
         "agencies": [
+            {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
+            },
             {
                 "name": "CDIIS",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157401/cdiis_logo_e9zqsi.png"
             },
             {
-                "name": "DEVCON Iligan",
-                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/devcon_iligan_np35xb.jpg"
-            },
-            {
                 "name": "Digital Creatives Hub Iligan",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/dch_logo_qq5p0t.png"
+            },
+            {
+                "name": "DEVCON Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/devcon_iligan_np35xb.jpg"
             }
         ],
-        "registerLink": "",
+        "registerLink": "https://forms.gle/uMMEAktTLvRn3rZP8",
         "posts": [
             {
                 "poster": "Digital Creatives Hub Iligan",
@@ -293,6 +374,13 @@
                 "description": "𝗧𝗵𝗲 𝗜𝗻𝘁𝗿𝗼𝗱𝘂𝗰𝘁𝗶𝗼𝗻 𝘁𝗼 𝗩𝗶𝗯𝗲 𝗖𝗼𝗱𝗶𝗻𝗴 𝗧𝗼𝗼𝗸 𝗢𝗳𝗳 𝗮𝘁 𝘁𝗵𝗲 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲𝘀 𝗛𝘂𝗯 The Digital Creatives Hub – Iligan hosted Introduction to Vibe Coding: Building with AI — a beginner-friendly session that welcomed participants into the world of AI-assisted development. Led by Mr. Alexander Burias, AI Consultant at Daloy Tech OPC and CTO/CEO of Tag Sing Co., the session explored how tools like Gemini and bolt.new allow users to create a landing page for a website using just natural language prompts — no coding experience needed. As part of the activity, participants were able to build their own landing pages by giving specific prompts, gaining hands-on experience in using AI to generate layouts and design structures. This session served as an introductory training, sparking interest for deeper workshops that will cover how to make websites work — including button functionality, page linking, and interactive components. Organized by DEVCON Iligan through the DEVCON Kids Program, the event is part of ICT Month 2025, in partnership with the City Government of Iligan under Mayor Frederick Siao, DICT Iligan, the ICTC Department, and the Center for Digital Iligan, Innovation & Sustainability (CDIIS).",
                 "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid015WiXB4U6CUjNBWum4M4mmQRuNJ2UEtozG3ZUpoUpviYbKo2TMobQKLvyNVyUKjhl&id=61574816864584&__cft__[0]=AZW_UK93sUNXtSNHlOzgQu6jwIlRuO8lucpZ-5FVSJUzGahdsMdg7Nj5f75cy4Ia-Jsh58fP7lRHXbQouNC7BzIzL8tX0xPN9ZZLcoTQBnY_zJRQgmIwyMDTZSwdQ7c9TiierAEq0ATr2MhyIjQxb8tr3UGRhuDfHcmI7JyTKtKjZg&__tn__=%2CO%2CP-R",
                 "thumbnail": "https://scontent.fmnl25-6.fna.fbcdn.net/v/t39.30808-6/508112436_122125377098827228_8682119555941321725_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGQPlQ9CLooMCUdIEk_zDPrsJorA2cykZWwmisDZzKRlWkn8jO0WEkg2QIBCRUwp_AW0wMIQTObdm-UHnmsVMVU&_nc_ohc=l6ZUiW8GbMIQ7kNvwFJieQa&_nc_oc=AdmyvpkwBZrNSZoFiQEpVQejqn-c-QHQ3KfEBmQTDUXgMnDd8-ucJsVph_-Np0QRqrs&_nc_zt=23&_nc_ht=scontent.fmnl25-6.fna&_nc_gid=LE32tr7qtlY2oc3o61fCqw&oh=00_AfM2tfEMqUFI3A9WJrUWeKR8ZvER1tWWoJCafsi5ZWbA_Q&oe=6857229D"
+            },
+            {
+                "poster": "Digital Creatives Hub Iligan",
+                "title": "Digital Creatives Hub Iligan",
+                "description": "The Digital Creatives Hub – Iligan hosted Introduction to Vibe Coding: Building with AI — a beginner-friendly session that welcomed participants into the world of AI-assisted development.",
+                "link": "https://www.facebook.com/permalink.php?story_fbid=pfbid015WiXB4U6CUjNBWum4M4mmQRuNJ2UEtozG3ZUpoUpviYbKo2TMobQKLvyNVyUKjhl&id=61574816864584",
+                "thumbnail": "https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/508187626_122125376822827228_252500968759529827_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFZSaNElf8KGKe6H_bqVuyDz4J1fFHnEBfPgnV8UecQFzaMjC5GdVKLidXw5ws1IdROCQzD2dl7QptBdBof5zBz&_nc_ohc=gx6jOR-FaOEQ7kNvwHr0nyV&_nc_oc=AdnwjJgQ-ojgKVSbCqVXzKxtq7znPE_d7iuYBYWsVhkqOtH6W9I2bcDVl1byxPlZ3LQ&_nc_zt=23&_nc_ht=scontent.fcgy1-1.fna&_nc_gid=RYz7GWBTZknpjCcZAuDIzQ&oh=00_AfPoOTtRW1z3e-LbLbD5RFfN6fCRSXZn3Ev6VKyAfxGn2Q&oe=68576EEE"
             }
         ]
     },
@@ -305,7 +393,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description":  "The first day of the Spark Program, an intensive training to ignite interest in ICT and build foundational skills.",
         "agencies": [
             {
                 "name": "DICT",
@@ -324,7 +412,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "Day two of the Spark Program, continuing with more advanced topics and hands-on activities to further develop participants' ICT skills.",
         "agencies": [
             {
                 "name": "DICT",
@@ -343,7 +431,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The third day of the Spark Program, focusing on practical applications and project-based learning to solve real-world problems.",
         "agencies": [
             {
                 "name": "DICT",
@@ -370,7 +458,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "Join us for an open house at the Digital Creatives Hub! Explore the latest gadgets, technologies, and creative tools available to the community.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -408,7 +496,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "On the fourth day of the Spark Program, participants will dive into specialized topics and work on their capstone projects.",
         "agencies": [
             {
                 "name": "DICT",
@@ -435,7 +523,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The battle begins! Watch as teams compete in the qualifying stage of the Mobile Legends Tournament for a spot in the championship.",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -484,7 +572,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The final day of the Spark Program, featuring project presentations and a graduation ceremony for all participants.",
         "agencies": [
             {
                 "name": "DICT",
@@ -511,7 +599,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The qualifying stage of the Mobile Legends Tournament continues. Don't miss the intense action as more teams fight for glory.",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -560,7 +648,7 @@
         },
         "location": "DICT Training Room",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "Test your ICT knowledge and skills in the ICT Proficiency Exam. Earn a certification and boost your professional credentials.",
         "agencies": [
             {
                 "name": "DICT",
@@ -587,7 +675,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "A crash course on 3D modeling and printing. Learn to create your own 3D models and bring them to life with our 3D printers.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -636,7 +724,7 @@
         },
         "location": "Brgy. Rogongon, Iligan City",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "An outreach program to bring digital education to remote areas. The 'School in a Bag' provides a portable classroom with digital tools for students.",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -666,15 +754,15 @@
         ]
     },
     {
-        "title": "Programming Contest",
+        "title": "ByteBattle: CODE, CRASH, CONQUERProgramming Contest",
         "date": "2025-06-24",
         "time": {
             "start": "8:00",
             "end": "17:00"
         },
         "location": "Mindanao State University - Iligan Institute of Technology",
-        "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "attendees": 30,
+        "description": "👨‍💻🧑‍💻 Let the brackets fly and the functions flow—join us at MSU-IIT in the College of Computer Studies for 𝗕𝘆𝘁𝗲𝗕𝗮𝘁𝘁𝗹𝗲: 𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 𝗖𝗼𝗺𝗽𝗲𝘁𝗶𝘁𝗶𝗼𝗻 🏆",
         "agencies": [
             {
                 "name": "Mindanao State University - Iligan Institute of Technology",
@@ -683,9 +771,17 @@
             {
                 "name": "DEVCON Iligan",
                 "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/devcon_iligan_np35xb.jpg"
+            },
+            {
+                "name": "DICT",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157403/dict_logo_gch3fd.png"
+            },
+            {
+                "name": "LGU Iligan",
+                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157405/lgu_iligan_tlk9i4.jpg"
             }
         ],
-        "registerLink": "",
+        "registerLink": "https://forms.gle/qL3yG7oCTtTSg3BM7",
         "posts": [
             {
                 "poster": "Mindanao State University - Iligan Institute of Technology",
@@ -712,7 +808,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "A briefing on the new Creatives Cowork Space and Virtual Office Space for MSMEs at the Digital Creatives Hub Iligan. Learn about the amenities and how to join.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -757,7 +853,7 @@
         },
         "location": "Online Webinar",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "An online webinar discussing the role of smart systems in driving digital transformation across various industries. Learn from experts and see case studies.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -802,7 +898,7 @@
         },
         "location": "Robinsons Place Iligan",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "Join us for the culminating activity of the National ICT Month 2025. A celebration of a month-long series of events, with awarding ceremonies and special presentations.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -851,7 +947,7 @@
         },
         "location": "Robinsons Place Iligan",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "The grand finals of the Mobile Legends Tournament! Witness the final battle as the best teams compete for the championship title.",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -889,7 +985,7 @@
         },
         "location": "Robinsons Place Iligan",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "Watch young innovators showcase their skills in the DEVCON Kids Robotics Tournament. A fun and exciting competition for future engineers and programmers.",
         "agencies": [
             {
                 "name": "LGU Iligan",
@@ -927,7 +1023,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "A Focus Group Discussion on Digital Tourism and Community-Based Digital Nomad Tourism. Share your insights on how to promote Iligan as a destination for digital nomads.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -976,7 +1072,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "An event aimed at empowering professional service providers and offices in Iligan with the latest technologies and digital tools to enhance their services.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -1014,7 +1110,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "A meetup for freelancers in Iligan to network, share experiences, and learn from each other. A great opportunity to connect with the local freelance community.",
         "agencies": [
             {
                 "name": "CDIIS",
@@ -1063,7 +1159,7 @@
         },
         "location": "Digital Creatives Hub",
         "attendees": 20,
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
+        "description": "An introductory workshop on drone technology. Learn about the basics of flying drones, their applications, and the regulations surrounding their use.",
         "agencies": [
             {
                 "name": "CDIIS",
