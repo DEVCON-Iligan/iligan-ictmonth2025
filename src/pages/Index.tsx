@@ -12,6 +12,7 @@ import { getOngoingEvents } from '@/components/utils/get-current-events';
 import { getNextDayEventsSorted } from '@/components/utils/get-tomorrow-events';
 import { getUpcomingEvents } from '@/components/utils/get-upcoming-events';
 import { getPastEvents } from '@/components/utils/get-past-events';
+import { startCountdownFormatted } from '@/components/utils/start-countdown';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,11 +30,14 @@ const Index = () => {
   const upcomingEvents = getUpcomingEvents(eventsData, clientDate);
   const pastEvents = getPastEvents(eventsData, clientDate);
 
+
+  // Uncomment the following lines to enable client date updates every second
+  // Error in Console
   useEffect(() => {
-    const interval = setInterval(() => {
-      setClientDate(new Date());
-    }, 1000);
-    return () => clearInterval(interval);
+    // const interval = setInterval(() => {
+    //   setClientDate(new Date());
+    // }, 1000);
+    // return () => clearInterval(interval);
   }, []);
 
   // Header Scroll and Animation Hooks
@@ -168,27 +172,49 @@ const Index = () => {
           {currentEvents.length > 0 && (
             <h1 className='text-4xl md:text-5xl font-bold mb-6 text-[#165e85] mt-32'>Happening Now</h1>
           )}
+          {tomorrowEvents.length > 0 && currentEvents.length <= 0 && (
+            <>
+              <h1 className='text-4xl md:text-5xl font-bold mb-6 text-[#165e85] mt-32'>Coming Tomorrow</h1>
+            </>
+          )}
           <div className='m-auto max-w-[1200px] mt-8 w-full h-fit flex flex-col justify-cent  er'>
-            {currentEvents.length > 0 ? (
-              currentEvents.map((event, index) => (
+            {currentEvents.length > 0 && (
+              <div className='flex-1'>
+                <EventCard
+                  key={0}
+                  title={currentEvents[0].title}
+                  date={currentEvents[0].date}
+                  time={currentEvents[0].time}
+                  location={currentEvents[0].location}
+                  attendees={currentEvents[0].attendees}
+                  description={currentEvents[0].description}
+                  type={currentEvents[0].type}
+                  posts={currentEvents[0].posts}
+                  agencies={currentEvents[0].agencies}
+                  registerLink={currentEvents[0].registerLink}
+                  isGlass={true}
+                />
+              </div>
+            )}
+            {tomorrowEvents.length > 0 && currentEvents.length <= 0 && (
+              <div className='w-full h-96'>
                 <div className='flex-1'>
                   <EventCard
-                    key={index}
-                    title={event.title}
-                    date={event.date}
-                    time={event.time}
-                    location={event.location}
-                    attendees={event.attendees}
-                    description={event.description}
-                    type={event.type}
-                    posts={event.posts}
-                    agencies={event.agencies}
+                    key={0}
+                    title={tomorrowEvents[0].title}
+                    date={tomorrowEvents[0].date}
+                    time={tomorrowEvents[0].time}
+                    location={tomorrowEvents[0].location}
+                    attendees={tomorrowEvents[0].attendees}
+                    description={tomorrowEvents[0].description}
+                    type={tomorrowEvents[0].type}
+                    posts={tomorrowEvents[0].posts}
+                    agencies={tomorrowEvents[0].agencies}
+                    registerLink=''
                     isGlass={true}
                   />
                 </div>
-              ))
-            ) : (
-              <></>
+              </div>
             )}
             <div className='w-full h-32'>
 
@@ -213,14 +239,14 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             {upcomingEvents.map((event, index) => (
               <div
-                key={index}
+                key={`upcoming-${event.title}-${index}`}
                 className="flex gap-8 mb-12 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-shrink-0 pt-6">
-                  <TimelineConnector isLast={index === events.length - 1} />
+                  <TimelineConnector isLast={index === upcomingEvents.length - 1} />
                 </div>
-                <EventCard {...event} />
+                <EventCard key={`upcoming-${event.title}-${index}`} {...event} />
               </div>
             ))}
           </div>
@@ -236,14 +262,14 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             {pastEvents.map((event, index) => (
               <div
-                key={index}
+                key={`past-${event.title}-${index}`}
                 className="flex gap-8 mb-12 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex-shrink-0 pt-6">
-                  <TimelineConnector isLast={index === events.length - 1} />
+                  <TimelineConnector isLast={index === pastEvents.length - 1} />
                 </div>
-                <EventCard {...event} />
+                <EventCard key={`past-${event.title}-${index}`} {...event} />
               </div>
             ))}
           </div>
@@ -268,7 +294,7 @@ const Index = () => {
             <p className="text-gray-400 mb-6">
               Iligan City | June 2025 | National ICT Month
             </p>
-            
+
             <p className="text-gray-500 text-sm mt-6">
               © 2025 Digital Bayanihan by LGU Iligan ICTC. All rights reserved.
             </p>

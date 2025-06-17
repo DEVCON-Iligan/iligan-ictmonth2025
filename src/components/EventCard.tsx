@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { useEffect, useState } from "react";
 
 interface EventCardProps {
+  key,
   title: string;
   date: string;
   time?: {
@@ -27,6 +28,7 @@ interface EventCardProps {
 }
 
 const EventCard = ({
+  key,
   title,
   date,
   time,
