@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import { useHeaderScroll } from '@/hooks/use-header-scroll';
 import { useHeaderAnimation } from '@/hooks/use-header-animation';
+import { getOngoingEvents } from '@/components/utils/get-current-event';
 
 const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,13 @@ const Index = () => {
   const mainHeaderRef = useRef<HTMLDivElement>(null);
   const [clientDate, setClientDate] = useState(new Date());
 
+  const events = eventsData;
+
+
   useEffect(() => {
+    const currentEvents = getOngoingEvents(events, clientDate);
+    console.log(JSON.stringify(currentEvents))
+
     const interval = setInterval(() => {
       setClientDate(new Date());
     }, 1000);
@@ -38,7 +45,6 @@ const Index = () => {
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216448/national_privacy_commission_logo_tkbgv6.webp", name: "National Privacy Commission" }
   ]
 
-  const events = eventsData;
 
   const navigationItems = [
     { name: "Home", href: "#home" },
@@ -48,17 +54,17 @@ const Index = () => {
   return (
     <div className="min-h-screen text-black relative overflow-hidden">
       {/* Background Elements */}
-      {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full blur-3xl animate-pulse" />
         <div
-          className="absolute top-40 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse"
+          className="absolute top-40 right-20 w-96 h-96 bg-blue-500 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl animate-pulse"
+          className="absolute bottom-20 left-1/3 w-80 h-80 bg-indigo-500 rounded-full blur-3xl animate-pulse"
           style={{ animationDelay: "2s" }}
         />
-      </div> */}
+      </div>
       {/* Fixed Header */}
       <header ref={headerRef} className={`${headerClass} fixed top-0 left-0 right-0 z-50`}>
         <div className="p-4 flex flex-row w-full h-full">
