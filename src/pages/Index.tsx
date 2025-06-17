@@ -51,7 +51,8 @@ const Index = () => {
 
   const navigationItems = [
     { name: "Home", href: "#home" },
-    { name: "Events", href: "#events" },
+    { name: "Upcoming Events", href: "#upcoming-events" },
+    { name: "Previous Events", href: "#past-events" },
   ];
 
   return (
@@ -91,7 +92,7 @@ const Index = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`${headerClass.includes('glass-dark') ? 'text-white hover:text-[#813AEA]' : 'text-[#5E31D2]/60 hover:text-[#5E31D2]'} transition-colors duration-200 font-medium`}
+                    className={`${headerClass.includes('glass-dark') ? 'text-black/60 hover:text-[#335c74]' : 'text-black/60 hover:text-[#335c74]/100'} transition-colors duration-200 font-medium`}
                   >
                     {item.name}
                   </a>
@@ -123,9 +124,6 @@ const Index = () => {
                         {item.name}
                       </a>
                     ))}
-                    <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0 mt-3">
-                      Register Now
-                    </Button>
                   </div>
                 </nav>
               )}
@@ -201,9 +199,9 @@ const Index = () => {
       </section>
 
       {/* Events Timeline */}
-      <section id="events" className="relative z-10 py-20">
+      <section className="relative z-10 py-20">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
+          <div id="upcoming-events" className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
               Upcoming Events
             </h2>
@@ -226,7 +224,7 @@ const Index = () => {
               </div>
             ))}
           </div>
-          <div className="text-center mb-16 mt-32">
+          <div id="past-events" className="text-center mb-16 mt-32">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
               Past Events
             </h2>
