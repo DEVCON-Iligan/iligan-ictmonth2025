@@ -439,15 +439,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Open House and Exploring Gadgets",
@@ -470,22 +462,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "CDIIS",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Spark Program Day 4",
@@ -504,15 +481,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Mobile Legends Tournament Qualifying Stage Day 1",
@@ -539,29 +508,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Iligan Computer Institute",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Spark Program Day 5",
@@ -580,15 +527,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Mobile Legends Tournament Qualifying Stage Day 2",
@@ -615,29 +554,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Iligan Computer Institute",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "ICT Proficiency Exam",
@@ -656,15 +573,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "3D Modeling and 3D Printing Crash Course",
@@ -691,29 +600,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "CDIIS",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Obsidian Creatives",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "School in a Bag",
@@ -736,22 +623,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "ByteBattle: CODE, CRASH, CONQUERProgramming Contest",
@@ -782,22 +654,7 @@
             }
         ],
         "registerLink": "https://forms.gle/qL3yG7oCTtTSg3BM7",
-        "posts": [
-            {
-                "poster": "Mindanao State University - Iligan Institute of Technology",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "DCIH Creatives Cowork Space and MSMEs Virtual Office Space Briefing",
@@ -820,29 +677,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Smart Systems for Digital Transformation",
@@ -865,29 +700,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "CDIIS",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "National ICT Month 2025 Culminating Activity",
@@ -914,29 +727,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Mobile Legends Tournament Championship Stage",
@@ -959,22 +750,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Iligan Computer Institute",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "DEVCON Kids Robotics Tournament",
@@ -997,22 +773,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "LGU Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Digital Tourism and Community-Based Digital Nomad Tourism FGD",
@@ -1039,67 +800,7 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
-    },
-    {
-        "title": "Tech-Up Iligan | Empowering Iligan Cities Professional Service Provider and Offices",
-        "date": "2025-06-28",
-        "time": {
-            "start": "8:30",
-            "end": "11:30"
-        },
-        "location": "Digital Creatives Hub",
-        "attendees": 20,
-        "description": "An event aimed at empowering professional service providers and offices in Iligan with the latest technologies and digital tools to enhance their services.",
-        "agencies": [
-            {
-                "name": "CDIIS",
-                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157401/cdiis_logo_e9zqsi.png"
-            },
-            {
-                "name": "Digital Creatives Hub Iligan",
-                "logo": "https://res.cloudinary.com/df9iielq1/image/upload/v1750157402/dch_logo_qq5p0t.png"
-            }
-        ],
-        "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Iligan Freelancers Meetup",
@@ -1126,29 +827,7 @@
             }
         ],
         "registerLink": "https://forms.gle/7Z1b3d8g5f4x9z2a6",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     },
     {
         "title": "Intro to Drone",
@@ -1175,28 +854,6 @@
             }
         ],
         "registerLink": "",
-        "posts": [
-            {
-                "poster": "DICT",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "DEVCON Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            },
-            {
-                "poster": "Digital Creatives Hub Iligan",
-                "title": "Tentative Post Title",
-                "description": "Tentative Post Description",
-                "link": "",
-                "thumbnail": ""
-            }
-        ]
+        "posts": []
     }
 ]

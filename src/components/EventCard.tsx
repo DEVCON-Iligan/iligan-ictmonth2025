@@ -39,6 +39,39 @@ const EventCard = ({
 }: EventCardProps) => {
   const isRegistrationValid = useEventRegistration(date, time);
 
+// Format the date to be in the format of Month Day, Year
+const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+});
+
+// Format the time to be in the format of 12:00 AM
+const formattedTime = (timeString: string | null) => {
+  if (!timeString) return "";
+  const [hours, minutes] = timeString.split(":");
+  const hoursInt = parseInt(hours);
+  const ampm = hoursInt >= 12 ? "PM" : "AM";
+  const hours12 = hoursInt % 12 || 12;
+  return `${hours12}:${minutes} ${ampm}`;
+}
+
+// Check if the event is in the past, use to format attendees
+// If event is in the past (done), set attendees to "attended"
+// If event is current or in the future, set attendees to "expected"
+const isPast = () => {
+  const now = new Date();
+
+  if (time) {
+    const endTime = new Date(`${date}T${time.end}`);
+    return now > endTime;
+  }
+  
+  const eventDate = new Date(date);
+  eventDate.setHours(23, 59, 59, 999);
+  return now > eventDate;
+}
+
   return (
     <Card className={`${isGlass ? "bg-white/50 hover:bg-white/50 backdrop-blur-[9px]" : "bg-white hover:bg-white"} p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl w-full`}>
       <div className="flex flex-col space-y-4">
@@ -78,11 +111,11 @@ const EventCard = ({
         <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
           <div className="flex items-center gap-2 text-black">
             <Calendar className="h-4 w-4 text-purple-400" />
-            <span className="text-sm">{date}</span>
+            <span className="text-sm">{formattedDate}</span>
           </div>
           <div className="flex items-center gap-2 text-black">
             <Clock className="h-4 w-4 text-blue-400" />
-            <span className="text-sm">{time ? `${time.start} - ${time.end}` : "All Day:"}</span>
+            <span className="text-sm">{time ? `${formattedTime(time.start)} - ${formattedTime(time.end)}` : "All Day:"}</span>
           </div>
           <div className="flex items-center gap-2 text-black">
             <MapPin className="h-4 w-4 text-green-400" />
@@ -90,7 +123,7 @@ const EventCard = ({
           </div>
           <div className="flex items-center gap-2 text-black">
             <Users className="h-4 w-4 text-orange-400" />
-            <span className="text-sm">{attendees} attendees </span>
+            <span className="text-sm">{attendees} {isPast() ? "attended" : "expected attendees"} </span>
           </div>
         </div>
         <div className="w-full flex justify-end">
