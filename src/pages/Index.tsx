@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import EventCard from '@/components/EventCard';
 import TimelineConnector from '@/components/TimelineConnector';
 import FloatingElement from '@/components/FloatingElement';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import eventsData from '../data/events.json';
 import { useHeaderScroll } from '@/hooks/use-header-scroll';
 import { useHeaderAnimation } from '@/hooks/use-header-animation';
@@ -24,6 +24,7 @@ const Index = () => {
   const mainHeaderRef = useRef<HTMLDivElement>(null);
   const clientDate = useClientDate();
 
+  // Events Data
   const events = eventsData;
   const currentEvents = getOngoingEvents(events, clientDate);
   const tomorrowEvents = getNextDayEventsSorted(eventsData, clientDate);
@@ -33,6 +34,13 @@ const Index = () => {
   // Header Scroll and Animation Hooks
   const { headerClass, showAltHeaderContent } = useHeaderScroll(headerRef, heroRef);
   useHeaderAnimation(showAltHeaderContent, mainHeaderRef, altHeaderRef);
+
+  // Handle Navigation Click in Header
+  const navigationItems = [
+    { name: "Home", href: "#home" },
+    ...(upcomingEvents.length > 0 ? [{ name: "Upcoming Events", href: "#upcoming-events" }] : []),
+    { name: "Past Events", href: "#past-events" },
+  ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -70,12 +78,6 @@ const Index = () => {
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216000/ntc_logo_kw2inh.webp", name: "National Telecommunications Commission Logo" },
     { logo: "https://res.cloudinary.com/df9iielq1/image/upload/v1749216448/national_privacy_commission_logo_tkbgv6.webp", name: "National Privacy Commission" }
   ]
-
-  const navigationItems = [
-    { name: "Home", href: "#home" },
-    { name: "Upcoming Events", href: "#upcoming-events" },
-    { name: "Past Events", href: "#past-events" },
-  ];
 
   return (
     <div className="min-h-screen text-black relative overflow-hidden">
@@ -237,31 +239,36 @@ const Index = () => {
       </section>
 
       {/* Events Timeline */}
-      <section className="relative z-10 py-20">
+      <section className="relative z-10 ">
         <div className="container mx-auto px-6">
-          <div id="upcoming-events" className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
-              Upcoming Events
-            </h2>
-            <p className="text-xl text-black/70 max-w-2xl mx-auto">
-              Events that you can join
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            {upcomingEvents.map((event, index) => (
-              <div
-                key={`upcoming-${event.title}-${index}`}
-                className="flex gap-8 mb-12 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex-shrink-0 pt-6">
-                  <TimelineConnector isLast={index === upcomingEvents.length - 1} />
-                </div>
-                <EventCard key={`upcoming-card-${event.title}-${index}`} {...event} />
+          {upcomingEvents.length > 0 && (
+            <>
+              <div id="upcoming-events" className="text-center mb-16 mt-32">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
+                  Upcoming Events
+                </h2>
+                <p className="text-xl text-black/70 max-w-2xl mx-auto">
+                  Events that you can join
+                </p>
               </div>
-            ))}
-          </div>
+
+            
+              <div className="max-w-4xl mx-auto">
+                {upcomingEvents.map((event, index) => (
+                  <div
+                    key={`upcoming-${event.title}-${index}`}
+                    className="flex gap-8 mb-12 animate-fade-in-up"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="flex-shrink-0 pt-6">
+                      <TimelineConnector isLast={index === upcomingEvents.length - 1} />
+                    </div>
+                    <EventCard key={`upcoming-card-${event.title}-${index}`} {...event} />
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
           <div id="past-events" className="text-center mb-16 mt-32">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#165e85]">
               Past Events
